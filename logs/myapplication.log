@@ -12,4 +12,14 @@
 ""2017-01-16 11:23:11 [main] INFO  com.mental.contactbook.Application - Started Application in 3.531 seconds (JVM running for 4.622)
 ""2017-01-16 11:23:11 [Thread-1] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1dc67c2: startup date [Mon Jan 16 11:23:08 EET 2017]; root of context hierarchy
 ""2017-01-16 11:23:11 [Thread-1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2017-01-16 11:52:22 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - Starting ContactDaoImplTest on aleksandrk with PID 2280 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-16 11:52:22 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - No active profile set, falling back to default profiles: default
+""2017-01-16 11:52:22 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@23b78d: startup date [Mon Jan 16 11:52:22 EET 2017]; root of context hierarchy
+""2017-01-16 11:52:25 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - Started ContactDaoImplTest in 3.75 seconds (JVM running for 6.121)
+""2017-01-16 11:52:25 [Thread-1] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@23b78d: startup date [Mon Jan 16 11:52:22 EET 2017]; root of context hierarchy
+""2017-01-16 12:17:15 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - Starting ContactDaoImplTest on aleksandrk with PID 1968 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-16 12:17:15 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - No active profile set, falling back to default profiles: default
+""2017-01-16 12:17:15 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@13ca52e: startup date [Mon Jan 16 12:17:15 EET 2017]; root of context hierarchy
+""2017-01-16 12:17:17 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - Started ContactDaoImplTest in 3.5 seconds (JVM running for 5.051)
+""2017-01-16 12:17:17 [Thread-1] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@13ca52e: startup date [Mon Jan 16 12:17:15 EET 2017]; root of context hierarchy
 "
