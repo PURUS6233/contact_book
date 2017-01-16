@@ -26,7 +26,7 @@ public class ContactDaoImpl extends AbstractDao implements ContactDao {
 
 	private @Value("${app.getContacts}") String getContacts;
 
-	public Collection<Contact> getContacts() {
+	public Collection<Contact> getContacts() throws DaoException{
 		log.trace("Start to fetch contacts from DB.");
 		try {
 			log.trace("Contacts successfully loaded from DB.");

@@ -28,4 +28,17 @@
 ""2017-01-16 12:55:00 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - Started ContactDaoImplTest in 3.547 seconds (JVM running for 5.151)
 ""2017-01-16 12:55:00 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
 ""2017-01-16 12:55:00 [Thread-1] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1c7e403: startup date [Mon Jan 16 12:54:58 EET 2017]; root of context hierarchy
+""2017-01-16 14:19:08 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - Starting ContactDaoImplTest on aleksandrk with PID 5596 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-16 14:19:08 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - No active profile set, falling back to default profiles: default
+""2017-01-16 14:19:08 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1f29830: startup date [Mon Jan 16 14:19:08 EET 2017]; root of context hierarchy
+""2017-01-16 14:19:13 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - Started ContactDaoImplTest in 6.249 seconds (JVM running for 9.928)
+""2017-01-16 14:19:13 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-16 14:19:13 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Test!
+""2017-01-16 14:19:13 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-16 14:19:13 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts for regex retrieved!
+""2017-01-16 14:19:13 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contact with id: 1.
+""2017-01-16 14:19:13 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contact found and retrieved!
+""2017-01-16 14:19:13 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-16 14:19:13 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts retrieved!
+""2017-01-16 14:19:13 [Thread-1] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1f29830: startup date [Mon Jan 16 14:19:08 EET 2017]; root of context hierarchy
 "
