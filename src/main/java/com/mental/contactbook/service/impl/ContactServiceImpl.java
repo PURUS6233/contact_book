@@ -21,5 +21,4 @@ public class ContactServiceImpl implements ContactService {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 }
