@@ -1,0 +1,15 @@
+"2017-01-16 11:22:08 [main] INFO  com.mental.contactbook.Application - Starting Application on aleksandrk with PID 5744 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-16 11:22:08 [main] INFO  com.mental.contactbook.Application - No active profile set, falling back to default profiles: default
+""2017-01-16 11:22:08 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1dc67c2: startup date [Mon Jan 16 11:22:08 EET 2017]; root of context hierarchy
+""2017-01-16 11:22:11 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-01-16 11:22:11 [main] INFO  com.mental.contactbook.Application - Started Application in 3.547 seconds (JVM running for 4.699)
+""2017-01-16 11:22:11 [Thread-1] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1dc67c2: startup date [Mon Jan 16 11:22:08 EET 2017]; root of context hierarchy
+""2017-01-16 11:22:11 [Thread-1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2017-01-16 11:23:08 [main] INFO  com.mental.contactbook.Application - Starting Application on aleksandrk with PID 4476 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-16 11:23:08 [main] INFO  com.mental.contactbook.Application - No active profile set, falling back to default profiles: default
+""2017-01-16 11:23:08 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1dc67c2: startup date [Mon Jan 16 11:23:08 EET 2017]; root of context hierarchy
+""2017-01-16 11:23:11 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-01-16 11:23:11 [main] INFO  com.mental.contactbook.Application - Started Application in 3.531 seconds (JVM running for 4.622)
+""2017-01-16 11:23:11 [Thread-1] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1dc67c2: startup date [Mon Jan 16 11:23:08 EET 2017]; root of context hierarchy
+""2017-01-16 11:23:11 [Thread-1] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+"
