@@ -9,19 +9,3 @@ CREATE TABLE IF NOT EXISTS contactbook.contacts (
   name VARCHAR NOT NULL ,
   PRIMARY KEY (id) 
 );
-
-/*inserting data to contactbook.contacts table*/
-INSERT INTO contactbook.contacts(id, name)
-VALUES('1', 'Alexander');
-
-INSERT INTO contactbook.contacts(id, name)
-VALUES('2', 'Pavel');
-
-INSERT INTO contactbook.contacts(id, name)
-VALUES('56', 'Lesha');
-
-INSERT INTO contactbook.contacts(id, name)
-VALUES('58', 'Natasha');
-
-INSERT INTO contactbook.contacts(id, name)
-VALUES('12316546', 'Maksim');
