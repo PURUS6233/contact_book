@@ -5,4 +5,4 @@ script: mvn test
 services:
   - postgresql
 before_script:
-  - psql < src/main/resources/sql/bd.sql --verbose
+  - psql < src/main/resources/sql/bd.sql
