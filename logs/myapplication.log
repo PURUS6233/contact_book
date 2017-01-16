@@ -41,4 +41,1177 @@
 ""2017-01-16 14:19:13 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
 ""2017-01-16 14:19:13 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts retrieved!
 ""2017-01-16 14:19:13 [Thread-1] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1f29830: startup date [Mon Jan 16 14:19:08 EET 2017]; root of context hierarchy
+""2017-01-16 15:44:29 [main] INFO  c.m.c.c.ContactControllerTest - Starting ContactControllerTest on aleksandrk with PID 2676 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-16 15:44:29 [main] INFO  c.m.c.c.ContactControllerTest - No active profile set, falling back to default profiles: default
+""2017-01-16 15:44:35 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2b0b1c56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-16 15:44:35 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+""2017-01-16 15:44:36 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mental.contactbook.controller.ContactController required a bean of type 'com.mental.contactbook.service.ContactService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mental.contactbook.service.ContactService' in your configuration.
+
+""2017-01-16 15:44:36 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@7c7811] to prepare test instance [com.mental.contactbook.controller.ContactControllerTest@27d72f]
+"java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'contactController' defined in file [C:\Documents and Settings\aleksandrk\workspace\contactbook\target\classes\com\mental\contactbook\controller\ContactController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1050)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:754)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:111)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1466)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1097)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1059)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 43 common frames omitted
+"2017-01-16 15:44:36 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:44:36 [main] INFO  c.m.c.c.ContactControllerTest - Starting ContactControllerTest on aleksandrk with PID 2676 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-16 15:44:36 [main] INFO  c.m.c.c.ContactControllerTest - No active profile set, falling back to default profiles: default
+""2017-01-16 15:44:37 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2b0b1c56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-16 15:44:37 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+""2017-01-16 15:44:37 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mental.contactbook.controller.ContactController required a bean of type 'com.mental.contactbook.service.ContactService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mental.contactbook.service.ContactService' in your configuration.
+
+""2017-01-16 15:44:37 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@7c7811] to prepare test instance [com.mental.contactbook.controller.ContactControllerTest@1601f82]
+"java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'contactController' defined in file [C:\Documents and Settings\aleksandrk\workspace\contactbook\target\classes\com\mental\contactbook\controller\ContactController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1050)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:754)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:111)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1466)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1097)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1059)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 43 common frames omitted
+"2017-01-16 15:44:37 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:44:37 [main] INFO  c.m.c.c.ContactControllerTest - Starting ContactControllerTest on aleksandrk with PID 2676 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-16 15:44:37 [main] INFO  c.m.c.c.ContactControllerTest - No active profile set, falling back to default profiles: default
+""2017-01-16 15:44:38 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2b0b1c56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-16 15:44:38 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+""2017-01-16 15:44:39 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mental.contactbook.controller.ContactController required a bean of type 'com.mental.contactbook.service.ContactService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mental.contactbook.service.ContactService' in your configuration.
+
+""2017-01-16 15:44:39 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@7c7811] to prepare test instance [com.mental.contactbook.controller.ContactControllerTest@1b65013]
+"java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'contactController' defined in file [C:\Documents and Settings\aleksandrk\workspace\contactbook\target\classes\com\mental\contactbook\controller\ContactController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1050)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:754)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:111)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1466)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1097)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1059)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 43 common frames omitted
+"2017-01-16 15:44:39 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:44:39 [main] INFO  c.m.c.c.ContactControllerTest - Starting ContactControllerTest on aleksandrk with PID 2676 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-16 15:44:39 [main] INFO  c.m.c.c.ContactControllerTest - No active profile set, falling back to default profiles: default
+""2017-01-16 15:44:40 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2b0b1c56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-16 15:44:40 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+""2017-01-16 15:44:40 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mental.contactbook.controller.ContactController required a bean of type 'com.mental.contactbook.service.ContactService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mental.contactbook.service.ContactService' in your configuration.
+
+""2017-01-16 15:44:40 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@7c7811] to prepare test instance [com.mental.contactbook.controller.ContactControllerTest@170687]
+"java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'contactController' defined in file [C:\Documents and Settings\aleksandrk\workspace\contactbook\target\classes\com\mental\contactbook\controller\ContactController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1050)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:754)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:111)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1466)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1097)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1059)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 43 common frames omitted
+"2017-01-16 15:46:02 [main] INFO  c.m.c.c.ContactControllerTest - Starting ContactControllerTest on aleksandrk with PID 3276 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-16 15:46:02 [main] INFO  c.m.c.c.ContactControllerTest - No active profile set, falling back to default profiles: default
+""2017-01-16 15:46:05 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e4779302] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-16 15:46:06 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+""2017-01-16 15:46:06 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mental.contactbook.controller.ContactController required a bean of type 'com.mental.contactbook.service.ContactService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mental.contactbook.service.ContactService' in your configuration.
+
+""2017-01-16 15:46:06 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@afc191] to prepare test instance [com.mental.contactbook.controller.ContactControllerTest@6be319]
+"java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'contactController' defined in file [C:\Documents and Settings\aleksandrk\workspace\contactbook\target\classes\com\mental\contactbook\controller\ContactController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1050)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:754)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:111)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1466)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1097)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1059)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 43 common frames omitted
+"2017-01-16 15:46:06 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:46:06 [main] INFO  c.m.c.c.ContactControllerTest - Starting ContactControllerTest on aleksandrk with PID 3276 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-16 15:46:06 [main] INFO  c.m.c.c.ContactControllerTest - No active profile set, falling back to default profiles: default
+""2017-01-16 15:46:07 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e4779302] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-16 15:46:07 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+""2017-01-16 15:46:07 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mental.contactbook.controller.ContactController required a bean of type 'com.mental.contactbook.service.ContactService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mental.contactbook.service.ContactService' in your configuration.
+
+""2017-01-16 15:46:07 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@afc191] to prepare test instance [com.mental.contactbook.controller.ContactControllerTest@1c93ca4]
+"java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'contactController' defined in file [C:\Documents and Settings\aleksandrk\workspace\contactbook\target\classes\com\mental\contactbook\controller\ContactController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1050)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:754)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:111)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1466)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1097)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1059)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 43 common frames omitted
+"2017-01-16 15:46:07 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:46:08 [main] INFO  c.m.c.c.ContactControllerTest - Starting ContactControllerTest on aleksandrk with PID 3276 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-16 15:46:08 [main] INFO  c.m.c.c.ContactControllerTest - No active profile set, falling back to default profiles: default
+""2017-01-16 15:46:08 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e4779302] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-16 15:46:08 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+""2017-01-16 15:46:09 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mental.contactbook.controller.ContactController required a bean of type 'com.mental.contactbook.service.ContactService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mental.contactbook.service.ContactService' in your configuration.
+
+""2017-01-16 15:46:09 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@afc191] to prepare test instance [com.mental.contactbook.controller.ContactControllerTest@1437222]
+"java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'contactController' defined in file [C:\Documents and Settings\aleksandrk\workspace\contactbook\target\classes\com\mental\contactbook\controller\ContactController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1050)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:754)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:111)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1466)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1097)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1059)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 43 common frames omitted
+"2017-01-16 15:46:09 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:46:09 [main] INFO  c.m.c.c.ContactControllerTest - Starting ContactControllerTest on aleksandrk with PID 3276 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-16 15:46:09 [main] INFO  c.m.c.c.ContactControllerTest - No active profile set, falling back to default profiles: default
+""2017-01-16 15:46:10 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e4779302] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-16 15:46:10 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+""2017-01-16 15:46:10 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mental.contactbook.controller.ContactController required a bean of type 'com.mental.contactbook.service.ContactService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mental.contactbook.service.ContactService' in your configuration.
+
+""2017-01-16 15:46:10 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@afc191] to prepare test instance [com.mental.contactbook.controller.ContactControllerTest@1545206]
+"java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'contactController' defined in file [C:\Documents and Settings\aleksandrk\workspace\contactbook\target\classes\com\mental\contactbook\controller\ContactController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1050)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:754)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:111)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1466)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1097)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1059)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 43 common frames omitted
+"2017-01-16 15:49:29 [main] INFO  c.m.c.c.ContactControllerTest - Starting ContactControllerTest on aleksandrk with PID 956 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-16 15:49:29 [main] INFO  c.m.c.c.ContactControllerTest - No active profile set, falling back to default profiles: default
+""2017-01-16 15:49:32 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e4779302] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-16 15:49:33 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+""2017-01-16 15:49:33 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mental.contactbook.controller.ContactController required a bean of type 'com.mental.contactbook.service.ContactService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mental.contactbook.service.ContactService' in your configuration.
+
+""2017-01-16 15:49:33 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@afc191] to prepare test instance [com.mental.contactbook.controller.ContactControllerTest@6be319]
+"java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'contactController' defined in file [C:\Documents and Settings\aleksandrk\workspace\contactbook\target\classes\com\mental\contactbook\controller\ContactController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1050)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:754)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:111)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1466)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1097)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1059)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 43 common frames omitted
+"2017-01-16 15:49:33 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:49:33 [main] INFO  c.m.c.c.ContactControllerTest - Starting ContactControllerTest on aleksandrk with PID 956 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-16 15:49:33 [main] INFO  c.m.c.c.ContactControllerTest - No active profile set, falling back to default profiles: default
+""2017-01-16 15:49:34 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e4779302] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-16 15:49:34 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+""2017-01-16 15:49:34 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mental.contactbook.controller.ContactController required a bean of type 'com.mental.contactbook.service.ContactService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mental.contactbook.service.ContactService' in your configuration.
+
+""2017-01-16 15:49:34 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@afc191] to prepare test instance [com.mental.contactbook.controller.ContactControllerTest@1c93ca4]
+"java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'contactController' defined in file [C:\Documents and Settings\aleksandrk\workspace\contactbook\target\classes\com\mental\contactbook\controller\ContactController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1050)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:754)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:111)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1466)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1097)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1059)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 43 common frames omitted
+"2017-01-16 15:49:34 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:49:34 [main] INFO  c.m.c.c.ContactControllerTest - Starting ContactControllerTest on aleksandrk with PID 956 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-16 15:49:34 [main] INFO  c.m.c.c.ContactControllerTest - No active profile set, falling back to default profiles: default
+""2017-01-16 15:49:35 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e4779302] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-16 15:49:35 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+""2017-01-16 15:49:36 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mental.contactbook.controller.ContactController required a bean of type 'com.mental.contactbook.service.ContactService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mental.contactbook.service.ContactService' in your configuration.
+
+""2017-01-16 15:49:36 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@afc191] to prepare test instance [com.mental.contactbook.controller.ContactControllerTest@1437222]
+"java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'contactController' defined in file [C:\Documents and Settings\aleksandrk\workspace\contactbook\target\classes\com\mental\contactbook\controller\ContactController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1050)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:754)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:111)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1466)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1097)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1059)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 43 common frames omitted
+"2017-01-16 15:49:36 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:49:36 [main] INFO  c.m.c.c.ContactControllerTest - Starting ContactControllerTest on aleksandrk with PID 956 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-16 15:49:36 [main] INFO  c.m.c.c.ContactControllerTest - No active profile set, falling back to default profiles: default
+""2017-01-16 15:49:37 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e4779302] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-16 15:49:37 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+""2017-01-16 15:49:37 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.mental.contactbook.controller.ContactController required a bean of type 'com.mental.contactbook.service.ContactService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mental.contactbook.service.ContactService' in your configuration.
+
+""2017-01-16 15:49:37 [main] ERROR o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@afc191] to prepare test instance [com.mental.contactbook.controller.ContactControllerTest@1545206]
+"java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'contactController' defined in file [C:\Documents and Settings\aleksandrk\workspace\contactbook\target\classes\com\mental\contactbook\controller\ContactController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1148)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1050)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:754)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:111)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.mental.contactbook.service.ContactService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1466)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1097)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1059)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 43 common frames omitted
+"2017-01-16 15:50:37 [main] INFO  c.m.c.c.ContactControllerTest - Starting ContactControllerTest on aleksandrk with PID 3932 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-16 15:50:37 [main] INFO  c.m.c.c.ContactControllerTest - No active profile set, falling back to default profiles: default
+""2017-01-16 15:50:40 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f73ccce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-16 15:50:41 [main] INFO  c.m.c.controller.ContactController - Create instance with ContactService.class entity.
+""2017-01-16 15:50:45 [main] INFO  c.m.c.c.ContactControllerTest - Started ContactControllerTest in 8.624 seconds (JVM running for 10.483)
+""2017-01-16 15:50:45 [main] INFO  c.m.c.controller.ContactController - Create instance with ContactService.class entity.
+""2017-01-16 15:50:47 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@607a4f testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@14c44f, testMethod = test_getAllContactsExceptRegex@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2663d3 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@108fdce]; rollback [true]
+""2017-01-16 15:50:47 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],params=[nameFilter],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContactsExceptRegex(java.lang.String) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:50:47 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts/{id}],methods=[GET],produces=[application/json]}" onto public com.mental.contactbook.entity.Contact com.mental.contactbook.controller.ContactController.getContact(java.lang.Long) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:50:47 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContacts() throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:50:47 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-16 15:50:47 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-16 15:50:47 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+""2017-01-16 15:50:48 [main] INFO  c.m.c.controller.ContactController - Request for fetching contacts that not match regex: ^$!
+""2017-01-16 15:50:48 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@607a4f testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@14c44f, testMethod = test_getAllContactsExceptRegex@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2663d3 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+""2017-01-16 15:50:48 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:50:48 [main] INFO  c.m.c.controller.ContactController - Create instance with ContactService.class entity.
+""2017-01-16 15:50:48 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@607a4f testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@16a31da, testMethod = test_getContactNotFound@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2663d3 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@108fdce]; rollback [true]
+""2017-01-16 15:50:48 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],params=[nameFilter],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContactsExceptRegex(java.lang.String) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:50:48 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts/{id}],methods=[GET],produces=[application/json]}" onto public com.mental.contactbook.entity.Contact com.mental.contactbook.controller.ContactController.getContact(java.lang.Long) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:50:48 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContacts() throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:50:48 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-16 15:50:48 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-16 15:50:48 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+""2017-01-16 15:50:48 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 9223372036854775807!
+""2017-01-16 15:50:48 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@607a4f testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@16a31da, testMethod = test_getContactNotFound@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2663d3 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+""2017-01-16 15:50:48 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:50:48 [main] INFO  c.m.c.controller.ContactController - Create instance with ContactService.class entity.
+""2017-01-16 15:50:48 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@607a4f testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@115ae33, testMethod = test_getContact@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2663d3 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@108fdce]; rollback [true]
+""2017-01-16 15:50:48 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],params=[nameFilter],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContactsExceptRegex(java.lang.String) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:50:48 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts/{id}],methods=[GET],produces=[application/json]}" onto public com.mental.contactbook.entity.Contact com.mental.contactbook.controller.ContactController.getContact(java.lang.Long) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:50:48 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContacts() throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:50:48 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-16 15:50:48 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-16 15:50:48 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+""2017-01-16 15:50:48 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 1!
+""2017-01-16 15:50:48 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@607a4f testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@115ae33, testMethod = test_getContact@ContactControllerTest, testException = java.lang.AssertionError: failure - expected HTTP responce body to have a value, mergedContextConfiguration = [WebMergedContextConfiguration@2663d3 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+""2017-01-16 15:50:48 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:50:48 [main] INFO  c.m.c.controller.ContactController - Create instance with ContactService.class entity.
+""2017-01-16 15:50:48 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@607a4f testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@1b100fe, testMethod = test_getContacts@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2663d3 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@108fdce]; rollback [true]
+""2017-01-16 15:50:48 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],params=[nameFilter],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContactsExceptRegex(java.lang.String) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:50:48 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts/{id}],methods=[GET],produces=[application/json]}" onto public com.mental.contactbook.entity.Contact com.mental.contactbook.controller.ContactController.getContact(java.lang.Long) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:50:48 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContacts() throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:50:48 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-16 15:50:48 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-16 15:50:48 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+""2017-01-16 15:50:48 [main] INFO  c.m.c.controller.ContactController - Request for fetching all Contacts.
+""2017-01-16 15:50:48 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@607a4f testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@1b100fe, testMethod = test_getContacts@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2663d3 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+""2017-01-16 15:52:33 [main] INFO  c.m.c.c.ContactControllerTest - Starting ContactControllerTest on aleksandrk with PID 172 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-16 15:52:33 [main] INFO  c.m.c.c.ContactControllerTest - No active profile set, falling back to default profiles: default
+""2017-01-16 15:52:36 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f73ccce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-16 15:52:37 [main] INFO  c.m.c.controller.ContactController - Create instance with ContactService.class entity.
+""2017-01-16 15:52:40 [main] INFO  c.m.c.c.ContactControllerTest - Started ContactControllerTest in 7.625 seconds (JVM running for 9.583)
+""2017-01-16 15:52:40 [main] INFO  c.m.c.controller.ContactController - Create instance with ContactService.class entity.
+""2017-01-16 15:52:41 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@607a4f testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@1d84e08, testMethod = test_getAllContactsExceptRegex@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2663d3 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@19f64c9]; rollback [true]
+""2017-01-16 15:52:41 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],params=[nameFilter],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContactsExceptRegex(java.lang.String) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:52:41 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts/{id}],methods=[GET],produces=[application/json]}" onto public com.mental.contactbook.entity.Contact com.mental.contactbook.controller.ContactController.getContact(java.lang.Long) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:52:41 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContacts() throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:52:41 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-16 15:52:41 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-16 15:52:41 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+""2017-01-16 15:52:41 [main] INFO  c.m.c.controller.ContactController - Request for fetching contacts that not match regex: ^$!
+""2017-01-16 15:52:42 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@607a4f testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@1d84e08, testMethod = test_getAllContactsExceptRegex@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2663d3 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+""2017-01-16 15:52:42 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:52:42 [main] INFO  c.m.c.controller.ContactController - Create instance with ContactService.class entity.
+""2017-01-16 15:52:42 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@607a4f testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@1fb1d7f, testMethod = test_getContactNotFound@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2663d3 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@19f64c9]; rollback [true]
+""2017-01-16 15:52:42 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],params=[nameFilter],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContactsExceptRegex(java.lang.String) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:52:42 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts/{id}],methods=[GET],produces=[application/json]}" onto public com.mental.contactbook.entity.Contact com.mental.contactbook.controller.ContactController.getContact(java.lang.Long) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:52:42 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContacts() throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:52:42 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-16 15:52:42 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-16 15:52:42 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+""2017-01-16 15:52:42 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 9223372036854775807!
+""2017-01-16 15:52:42 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@607a4f testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@1fb1d7f, testMethod = test_getContactNotFound@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2663d3 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+""2017-01-16 15:52:42 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:52:42 [main] INFO  c.m.c.controller.ContactController - Create instance with ContactService.class entity.
+""2017-01-16 15:52:42 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@607a4f testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@1bcf214, testMethod = test_getContact@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2663d3 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@19f64c9]; rollback [true]
+""2017-01-16 15:52:42 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],params=[nameFilter],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContactsExceptRegex(java.lang.String) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:52:42 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts/{id}],methods=[GET],produces=[application/json]}" onto public com.mental.contactbook.entity.Contact com.mental.contactbook.controller.ContactController.getContact(java.lang.Long) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:52:42 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContacts() throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:52:42 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-16 15:52:42 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-16 15:52:42 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+""2017-01-16 15:52:42 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:52:42 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 1!
+""2017-01-16 15:52:42 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@607a4f testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@1bcf214, testMethod = test_getContact@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2663d3 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+""2017-01-16 15:52:42 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:52:42 [main] INFO  c.m.c.controller.ContactController - Create instance with ContactService.class entity.
+""2017-01-16 15:52:42 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@607a4f testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@86a5a7, testMethod = test_getContacts@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2663d3 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@19f64c9]; rollback [true]
+""2017-01-16 15:52:42 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],params=[nameFilter],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContactsExceptRegex(java.lang.String) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:52:42 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts/{id}],methods=[GET],produces=[application/json]}" onto public com.mental.contactbook.entity.Contact com.mental.contactbook.controller.ContactController.getContact(java.lang.Long) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:52:42 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContacts() throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:52:42 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-16 15:52:42 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-16 15:52:42 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+""2017-01-16 15:52:42 [main] INFO  c.m.c.controller.ContactController - Request for fetching all Contacts.
+""2017-01-16 15:52:42 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@607a4f testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@86a5a7, testMethod = test_getContacts@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2663d3 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+""2017-01-16 15:53:48 [main] INFO  c.m.c.c.ContactControllerTest - Starting ContactControllerTest on aleksandrk with PID 6140 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-16 15:53:48 [main] INFO  c.m.c.c.ContactControllerTest - No active profile set, falling back to default profiles: default
+""2017-01-16 15:53:51 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a6b64ab4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-16 15:53:52 [main] INFO  c.m.c.controller.ContactController - Create instance with ContactService.class entity.
+""2017-01-16 15:53:54 [main] INFO  c.m.c.c.ContactControllerTest - Started ContactControllerTest in 7.578 seconds (JVM running for 9.271)
+""2017-01-16 15:53:54 [main] INFO  c.m.c.controller.ContactController - Create instance with ContactService.class entity.
+""2017-01-16 15:53:55 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@8b970c testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@fa2c4f, testMethod = test_getAllContactsExceptRegex@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4041cc testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@cab872]; rollback [true]
+""2017-01-16 15:53:55 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],params=[nameFilter],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContactsExceptRegex(java.lang.String) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:53:55 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts/{id}],methods=[GET],produces=[application/json]}" onto public com.mental.contactbook.entity.Contact com.mental.contactbook.controller.ContactController.getContact(java.lang.Long) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:53:55 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContacts() throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:53:55 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-16 15:53:55 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-16 15:53:55 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 16 ms
+""2017-01-16 15:53:55 [main] INFO  c.m.c.controller.ContactController - Request for fetching contacts that not match regex: ^$!
+""2017-01-16 15:53:56 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@8b970c testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@fa2c4f, testMethod = test_getAllContactsExceptRegex@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4041cc testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+""2017-01-16 15:53:56 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:53:56 [main] INFO  c.m.c.controller.ContactController - Create instance with ContactService.class entity.
+""2017-01-16 15:53:56 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@8b970c testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@7a8af2, testMethod = test_getContactNotFound@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4041cc testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@cab872]; rollback [true]
+""2017-01-16 15:53:56 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],params=[nameFilter],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContactsExceptRegex(java.lang.String) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:53:56 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts/{id}],methods=[GET],produces=[application/json]}" onto public com.mental.contactbook.entity.Contact com.mental.contactbook.controller.ContactController.getContact(java.lang.Long) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:53:56 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContacts() throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:53:56 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-16 15:53:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-16 15:53:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+""2017-01-16 15:53:56 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 9223372036854775807!
+""2017-01-16 15:53:56 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@8b970c testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@7a8af2, testMethod = test_getContactNotFound@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4041cc testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+""2017-01-16 15:53:56 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:53:56 [main] INFO  c.m.c.controller.ContactController - Create instance with ContactService.class entity.
+""2017-01-16 15:53:56 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@8b970c testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@1978f46, testMethod = test_getContact@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4041cc testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@cab872]; rollback [true]
+""2017-01-16 15:53:56 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],params=[nameFilter],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContactsExceptRegex(java.lang.String) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:53:56 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts/{id}],methods=[GET],produces=[application/json]}" onto public com.mental.contactbook.entity.Contact com.mental.contactbook.controller.ContactController.getContact(java.lang.Long) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:53:56 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContacts() throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:53:56 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-16 15:53:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-16 15:53:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+""2017-01-16 15:53:56 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:53:56 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 1!
+""2017-01-16 15:53:56 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@8b970c testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@1978f46, testMethod = test_getContact@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4041cc testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+""2017-01-16 15:53:56 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:53:56 [main] INFO  c.m.c.controller.ContactController - Create instance with ContactService.class entity.
+""2017-01-16 15:53:56 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@8b970c testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@d651f2, testMethod = test_getContacts@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4041cc testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@cab872]; rollback [true]
+""2017-01-16 15:53:56 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],params=[nameFilter],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContactsExceptRegex(java.lang.String) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:53:56 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts/{id}],methods=[GET],produces=[application/json]}" onto public com.mental.contactbook.entity.Contact com.mental.contactbook.controller.ContactController.getContact(java.lang.Long) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:53:56 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContacts() throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:53:56 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-16 15:53:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-16 15:53:56 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+""2017-01-16 15:53:56 [main] INFO  c.m.c.controller.ContactController - Request for fetching all Contacts.
+""2017-01-16 15:53:56 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@8b970c testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@d651f2, testMethod = test_getContacts@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4041cc testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@25a98f, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@12b07fd, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@3708b3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+""2017-01-16 15:53:56 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-16 15:53:56 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Test!
+""2017-01-16 15:53:56 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-16 15:53:56 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts for regex retrieved!
+""2017-01-16 15:53:56 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contact with id: 1.
+""2017-01-16 15:53:56 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contact found and retrieved!
+""2017-01-16 15:53:56 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-16 15:53:56 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts retrieved!
+""2017-01-16 15:55:22 [main] INFO  c.m.c.c.ContactControllerTest - Starting ContactControllerTest on aleksandrk with PID 5748 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-16 15:55:22 [main] INFO  c.m.c.c.ContactControllerTest - No active profile set, falling back to default profiles: default
+""2017-01-16 15:55:25 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5b767ac] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-16 15:55:26 [main] INFO  c.m.c.controller.ContactController - Create instance with ContactService.class entity.
+""2017-01-16 15:55:29 [main] INFO  c.m.c.c.ContactControllerTest - Started ContactControllerTest in 7.75 seconds (JVM running for 10.442)
+""2017-01-16 15:55:29 [main] INFO  c.m.c.controller.ContactController - Create instance with ContactService.class entity.
+""2017-01-16 15:55:30 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@52a00 testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@10bc15e, testMethod = test_getAllContactsExceptRegex@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1826d77 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@1a8c74e, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6d64ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1195bc3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@1c776b7]; rollback [true]
+""2017-01-16 15:55:30 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],params=[nameFilter],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContactsExceptRegex(java.lang.String) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:55:30 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts/{id}],methods=[GET],produces=[application/json]}" onto public com.mental.contactbook.entity.Contact com.mental.contactbook.controller.ContactController.getContact(java.lang.Long) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:55:30 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContacts() throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:55:30 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-16 15:55:30 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-16 15:55:30 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+""2017-01-16 15:55:31 [main] INFO  c.m.c.controller.ContactController - Request for fetching contacts that not match regex: ^$!
+""2017-01-16 15:55:31 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@52a00 testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@10bc15e, testMethod = test_getAllContactsExceptRegex@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1826d77 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@1a8c74e, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6d64ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1195bc3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+""2017-01-16 15:55:31 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:55:31 [main] INFO  c.m.c.controller.ContactController - Create instance with ContactService.class entity.
+""2017-01-16 15:55:31 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@52a00 testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@79e96b, testMethod = test_getContactNotFound@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1826d77 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@1a8c74e, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6d64ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1195bc3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@1c776b7]; rollback [true]
+""2017-01-16 15:55:31 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],params=[nameFilter],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContactsExceptRegex(java.lang.String) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:55:31 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts/{id}],methods=[GET],produces=[application/json]}" onto public com.mental.contactbook.entity.Contact com.mental.contactbook.controller.ContactController.getContact(java.lang.Long) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:55:31 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContacts() throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:55:31 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-16 15:55:31 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-16 15:55:31 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+""2017-01-16 15:55:31 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 9223372036854775807!
+""2017-01-16 15:55:31 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@52a00 testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@79e96b, testMethod = test_getContactNotFound@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1826d77 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@1a8c74e, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6d64ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1195bc3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+""2017-01-16 15:55:31 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:55:31 [main] INFO  c.m.c.controller.ContactController - Create instance with ContactService.class entity.
+""2017-01-16 15:55:31 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@52a00 testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@15c1d8c, testMethod = test_getContact@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1826d77 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@1a8c74e, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6d64ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1195bc3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@1c776b7]; rollback [true]
+""2017-01-16 15:55:31 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],params=[nameFilter],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContactsExceptRegex(java.lang.String) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:55:31 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts/{id}],methods=[GET],produces=[application/json]}" onto public com.mental.contactbook.entity.Contact com.mental.contactbook.controller.ContactController.getContact(java.lang.Long) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:55:31 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContacts() throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:55:31 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-16 15:55:31 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-16 15:55:31 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+""2017-01-16 15:55:31 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:55:31 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 1!
+""2017-01-16 15:55:31 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@52a00 testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@15c1d8c, testMethod = test_getContact@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1826d77 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@1a8c74e, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6d64ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1195bc3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+""2017-01-16 15:55:31 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Alexander!
+""2017-01-16 15:55:31 [main] INFO  c.m.c.controller.ContactController - Create instance with ContactService.class entity.
+""2017-01-16 15:55:31 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@52a00 testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@17bbfdf, testMethod = test_getContacts@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1826d77 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@1a8c74e, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6d64ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1195bc3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@1c776b7]; rollback [true]
+""2017-01-16 15:55:31 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],params=[nameFilter],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContactsExceptRegex(java.lang.String) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:55:31 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts/{id}],methods=[GET],produces=[application/json]}" onto public com.mental.contactbook.entity.Contact com.mental.contactbook.controller.ContactController.getContact(java.lang.Long) throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:55:31 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContacts() throws com.mental.contactbook.service.ServiceException
+""2017-01-16 15:55:31 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-16 15:55:31 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-16 15:55:31 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+""2017-01-16 15:55:31 [main] INFO  c.m.c.controller.ContactController - Request for fetching all Contacts.
+""2017-01-16 15:55:31 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@52a00 testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@17bbfdf, testMethod = test_getContacts@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1826d77 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@1a8c74e, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6d64ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1195bc3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+""2017-01-16 15:55:31 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mental.contactbook.dao.impl.ContactDaoImplTest], using SpringBootContextLoader
+""2017-01-16 15:55:31 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.mental.contactbook.dao.impl.ContactDaoImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+""2017-01-16 15:55:31 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+""2017-01-16 15:55:31 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1c4a691, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4abd3e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@c2b646, org.springframework.test.context.support.DirtiesContextTestExecutionListener@14514d8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@11dc20f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@13311f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@140cf1d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@c8f4b9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1c042d5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@84117b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1df14d1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@fb53af]
+""2017-01-16 15:55:31 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-16 15:55:31 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Test!
+""2017-01-16 15:55:31 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-16 15:55:31 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts for regex retrieved!
+""2017-01-16 15:55:31 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contact with id: 1.
+""2017-01-16 15:55:31 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contact found and retrieved!
+""2017-01-16 15:55:31 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-16 15:55:31 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts retrieved!
+""2017-01-16 16:00:46 [main] INFO  c.m.c.c.ContactControllerTest - Starting ContactControllerTest on aleksandrk with PID 5220 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-16 16:00:46 [main] INFO  c.m.c.c.ContactControllerTest - No active profile set, falling back to default profiles: default
+""2017-01-16 16:00:49 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2e14b3fe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-16 16:00:50 [main] INFO  c.m.c.controller.ContactController - Create instance with ContactService.class entity.
+""2017-01-16 16:00:52 [main] INFO  c.m.c.c.ContactControllerTest - Started ContactControllerTest in 7.452 seconds (JVM running for 9.352)
+""2017-01-16 16:00:52 [main] INFO  c.m.c.controller.ContactController - Create instance with ContactService.class entity.
+""2017-01-16 16:00:53 [main] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@52a00 testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@1a88417, testMethod = test_getContacts@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1826d77 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@1a8c74e, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6d64ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1195bc3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.jdbc.datasource.DataSourceTransactionManager@acfe88]; rollback [true]
+""2017-01-16 16:00:53 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/hello/contacts],methods=[GET],produces=[application/json]}" onto public java.util.Collection<com.mental.contactbook.entity.Contact> com.mental.contactbook.controller.ContactController.getAllContacts() throws com.mental.contactbook.service.ServiceException
+""2017-01-16 16:00:53 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-16 16:00:53 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-16 16:00:53 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+""2017-01-16 16:00:53 [main] INFO  c.m.c.controller.ContactController - Request for fetching all Contacts.
+""2017-01-16 16:00:53 [main] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test context [DefaultTestContext@52a00 testClass = ContactControllerTest, testInstance = com.mental.contactbook.controller.ContactControllerTest@1a88417, testMethod = test_getContacts@ContactControllerTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@1826d77 testClass = ContactControllerTest, locations = '{}', classes = '{class com.mental.contactbook.Application, class com.mental.contactbook.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@1a8c74e, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6d64ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1195bc3], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+""2017-01-16 16:00:53 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mental.contactbook.dao.impl.ContactDaoImplTest], using SpringBootContextLoader
+""2017-01-16 16:00:53 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.mental.contactbook.dao.impl.ContactDaoImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+""2017-01-16 16:00:53 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+""2017-01-16 16:00:53 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@47d2d9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@d293ee, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6dcfe6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@587507, org.springframework.test.context.transaction.TransactionalTestExecutionListener@77ba8f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@660f0c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@ef219, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@11f5012, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@dd323c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@734c04, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@160f169, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1ea657]
+""2017-01-16 16:00:54 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-16 16:00:54 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Test!
+""2017-01-16 16:00:54 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-16 16:00:54 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts for regex retrieved!
+""2017-01-16 16:00:54 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contact with id: 1.
+""2017-01-16 16:00:54 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contact found and retrieved!
+""2017-01-16 16:00:54 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-16 16:00:54 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts retrieved!
 "

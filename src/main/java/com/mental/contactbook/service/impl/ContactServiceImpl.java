@@ -6,6 +6,7 @@ import java.util.Collection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.mental.contactbook.dao.ContactDao;
 import com.mental.contactbook.dao.DaoException;
@@ -13,6 +14,7 @@ import com.mental.contactbook.entity.Contact;
 import com.mental.contactbook.service.ContactService;
 import com.mental.contactbook.service.ServiceException;
 
+@Service
 public class ContactServiceImpl implements ContactService {
 
 	@Autowired
