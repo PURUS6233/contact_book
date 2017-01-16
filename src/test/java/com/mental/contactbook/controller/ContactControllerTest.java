@@ -63,4 +63,70 @@ public class ContactControllerTest extends AbstractControllerTest{
 		assertTrue("failure - expected HTTP responce body to have a value",
 				content.trim().length() > 0);
 	}
+	
+	@Test
+	public void test_getAllContactsExceptRegex() throws Exception {
+
+		String regex = "^$";
+		
+		when(contactServiceMock.getAllContactsExceptRegex(regex)).thenReturn(contacts);
+
+		String uri = "/hello/contacts?nameFilter=" + regex;
+
+		MvcResult result = mvc.perform(
+				MockMvcRequestBuilders.get(uri).accept(
+						MediaType.APPLICATION_JSON)).andReturn();
+
+		String content = result.getResponse().getContentAsString();
+		int status = result.getResponse().getStatus();
+
+		verify(contactServiceMock, times(1)).getAllContactsExceptRegex(regex);
+
+		assertEquals("failure - expected HTTP status 200", 200, status);
+		assertTrue("failure - expected HTTP responce body to have a value",
+				content.trim().length() > 0);
+	}
+
+	@Test
+	public void test_getContact() throws Exception {
+
+		Long id = new Long(1);
+		
+		when(contactServiceMock.getContact(id)).thenReturn(getEntityStubData());
+
+		String uri = "/hello/contacts/{id}";
+
+		MvcResult result = mvc.perform(
+				MockMvcRequestBuilders.get(uri, id).accept(
+						MediaType.APPLICATION_JSON)).andReturn();
+
+		String content = result.getResponse().getContentAsString();
+		int status = result.getResponse().getStatus();
+
+		verify(contactServiceMock, times(1)).getContact(id);
+
+		assertEquals("failure - expected HTTP status 200", 200, status);
+		assertTrue("failure - expected HTTP responce body to have a value",
+				content.trim().length() > 0);
+	}
+	
+	@Test
+	public void test_getContactNotFound() throws Exception {
+
+		Long id = Long.MAX_VALUE;
+		
+		when(contactServiceMock.getContact(id)).thenReturn(null);
+
+		String uri = "/hello/contacts/{id}";
+
+		MvcResult result = mvc.perform(
+				MockMvcRequestBuilders.get(uri, id).accept(
+						MediaType.APPLICATION_JSON)).andReturn();
+
+		String content = result.getResponse().getContentAsString();
+
+		assertTrue("failure - expected HTTP responce body to return empty response",
+				content.trim().length() == 0);
+	}
+
 }
