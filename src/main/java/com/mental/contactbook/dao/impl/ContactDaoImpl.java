@@ -1,6 +1,7 @@
 package com.mental.contactbook.dao.impl;
 
 import java.util.Collection;
+
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,7 @@ import com.mental.contactbook.entity.Contact;
 @Repository
 @PropertySource(value = "classpath:sql.properties")
 public class ContactDaoImpl extends AbstractDao implements ContactDao {
-
+	
 	@Autowired
 	public void setDataSource(DataSource dataSource) {
 		super.setDataSource(dataSource);
@@ -26,10 +27,14 @@ public class ContactDaoImpl extends AbstractDao implements ContactDao {
 	private @Value("${app.getContacts}") String getContacts;
 
 	public Collection<Contact> getContacts() {
+		log.trace("Start to fetch contacts from DB.");
 		try {
+			log.trace("Contacts successfully loaded from DB.");
 			return getJdbcTemplate().query(getContacts,
 					new BeanPropertyRowMapper<Contact>(Contact.class));
 		} catch (DataAccessException e) {
+			log.error("Problem occured while loading Contacts! ",
+					e);
 			throw new DaoException("Problem occured while loading Contacts! ",
 					e);
 		}
