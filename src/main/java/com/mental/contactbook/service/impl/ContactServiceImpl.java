@@ -6,6 +6,7 @@ import java.util.Collection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import com.mental.contactbook.dao.ContactDao;
@@ -29,6 +30,7 @@ public class ContactServiceImpl implements ContactService {
 		return contactDao;
 	}
 
+	@Cacheable(value = "contact", key = "#id")
 	public Contact getContact(Long id) throws ServiceException {
 		log.info("Start to fetch contact with id: " + id + ".");
 		Contact contact = null;
@@ -70,6 +72,7 @@ public class ContactServiceImpl implements ContactService {
 		return contacts;
 	}
 
+	@Cacheable(value = "contacts", key = "#regex")
 	public Collection<Contact> getAllContactsExceptRegex(String regex) throws ServiceException{
 
 		log.info("Start to fetch contacts from DB.");

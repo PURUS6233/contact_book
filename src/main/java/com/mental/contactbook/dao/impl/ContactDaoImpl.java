@@ -33,11 +33,12 @@ public class ContactDaoImpl extends AbstractDao implements ContactDao {
 	private static final String cacheKey = "contacts";
 
 	public void initCaches() {
-		log.debug("initing checkExchangeExceptionResponseCache");
+		log.debug("initing ResponseCache");
 		initResponseCache();
 	}
 
 	private void initResponseCache() {
+		log.debug("loading contacts from DB and save it to cache");
 		contactDaoCache = CacheBuilder.newBuilder()
 				.refreshAfterWrite(1, TimeUnit.MINUTES)
 				.build(new CacheLoader<String, Collection<Contact>>() {
