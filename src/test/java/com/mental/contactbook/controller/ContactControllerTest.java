@@ -7,70 +7,54 @@ import java.util.Collection;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
+import org.junit.runner.RunWith;
 
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.when;
+import static org.mockito.BDDMockito.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 
-import org.mockito.MockitoAnnotations;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.hateoas.Resource;
 import org.springframework.http.MediaType;
+import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import org.springframework.transaction.annotation.Transactional;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import com.mental.contactbook.entity.Contact;
 import com.mental.contactbook.service.ContactService;
 
-@Transactional
-public class ContactControllerTest extends AbstractControllerTest {
+@RunWith(SpringRunner.class)
+@WebMvcTest(ContactController.class)
+public class ContactControllerTest {
 
 	@Autowired
-	private ContactResourceAssembler contactResourceAssembler;
+	private MockMvc mvc;
 
-	@Mock
+	@MockBean
 	private ContactService contactServiceMock;
 
-	@Mock
+	@MockBean
 	private ContactResourceAssembler contactResourceAssemblerMock;
 
-	@InjectMocks
-	private ContactController contactController;
+	private final Collection<Contact> contacts = Arrays.asList(contact);
 
-	@Before
-	public void setUp() {
-		MockitoAnnotations.initMocks(this);
-		mvc = MockMvcBuilders.standaloneSetup(contactController).build();
-		setResourse();
-	}
-
-	private final Collection<Contact> contacts = Arrays.asList(getEntityStubData());
-
-	private Resource<Contact> resourse;
-	
-	public void setResourse() {
-		this.resourse = contactResourceAssembler.toResource(getEntityStubData());
-	}
-
-	private Contact getEntityStubData() {
-		return new Contact(1, "Alexander");
-	}
+	private static final Contact contact = new Contact(1, "Test");
 
 	@Test
 	public void test_getContacts() throws Exception {
 
-		when(contactServiceMock.getContacts()).thenReturn(contacts);
-
 		String uri = "/hello/contacts";
 
-		MvcResult result = mvc.perform(
-				MockMvcRequestBuilders.get(uri).accept(
-						MediaType.APPLICATION_JSON)).andReturn();
+		given(this.contactServiceMock.getContacts()).willReturn(contacts);
+
+		MvcResult result = this.mvc.perform(
+				get(uri).accept(MediaType.APPLICATION_JSON)).andReturn();
 
 		String content = result.getResponse().getContentAsString();
 		int status = result.getResponse().getStatus();
@@ -81,19 +65,18 @@ public class ContactControllerTest extends AbstractControllerTest {
 		assertTrue("failure - expected HTTP responce body to have a value",
 				content.trim().length() > 0);
 	}
-	
+
 	@Test
 	public void test_getAllContactsExceptRegex() throws Exception {
 
 		String regex = "^$";
-		
-		when(contactServiceMock.getAllContactsExceptRegex(regex)).thenReturn(contacts);
-
 		String uri = "/hello/contacts?nameFilter=" + regex;
 
-		MvcResult result = mvc.perform(
-				MockMvcRequestBuilders.get(uri).accept(
-						MediaType.APPLICATION_JSON)).andReturn();
+		given(this.contactServiceMock.getAllContactsExceptRegex(regex))
+				.willReturn(contacts);
+
+		MvcResult result = this.mvc.perform(
+				get(uri).accept(MediaType.APPLICATION_JSON)).andReturn();
 
 		String content = result.getResponse().getContentAsString();
 		int status = result.getResponse().getStatus();
@@ -109,42 +92,37 @@ public class ContactControllerTest extends AbstractControllerTest {
 	public void test_getContact() throws Exception {
 
 		Long id = new Long(1);
-
-		when(contactResourceAssemblerMock.toResource((Contact) any()))
-				.thenReturn(resourse);
-		
 		String uri = "/hello/contacts/{id}";
 
-		MvcResult result = mvc.perform(
-				MockMvcRequestBuilders.get(uri, id).accept(
-						MediaType.APPLICATION_JSON)).andReturn();
+		given(this.contactServiceMock.getContact(id)).willReturn(contact);
 
-		String content = result.getResponse().getContentAsString();
+		MvcResult result = this.mvc.perform(
+				get(uri, id).accept(MediaType.APPLICATION_JSON)).andReturn();
+
 		int status = result.getResponse().getStatus();
 
 		verify(contactServiceMock, times(1)).getContact(id);
+		verify(contactResourceAssemblerMock, times(1)).toResource(contact);
 
 		assertEquals("failure - expected HTTP status 200", 200, status);
-		assertTrue("failure - expected HTTP responce body to have a value",
-				content.trim().length() > 0);
 	}
-	
+
 	@Test
 	public void test_getContactNotFound() throws Exception {
 
 		Long id = Long.MAX_VALUE;
-		
-		when(contactServiceMock.getContact(id)).thenReturn(null);
+
+		given(this.contactServiceMock.getContact(id)).willReturn(null);
 
 		String uri = "/hello/contacts/{id}";
 
-		MvcResult result = mvc.perform(
-				MockMvcRequestBuilders.get(uri, id).accept(
-						MediaType.APPLICATION_JSON)).andReturn();
+		MvcResult result = this.mvc.perform(
+				get(uri, id).accept(MediaType.APPLICATION_JSON)).andReturn();
 
 		String content = result.getResponse().getContentAsString();
 
-		assertTrue("failure - expected HTTP responce body to return empty response",
+		assertTrue(
+				"failure - expected HTTP responce body to return empty response",
 				content.trim().length() == 0);
 	}
 }

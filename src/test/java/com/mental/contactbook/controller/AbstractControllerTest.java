@@ -8,9 +8,6 @@ import com.mental.contactbook.AbstractTest;
 
 public abstract class AbstractControllerTest extends AbstractTest {
 
-	protected MockMvc mvc;
 	
-	@Autowired
-	protected WebApplicationContext webApplicationContext;
 
 }
