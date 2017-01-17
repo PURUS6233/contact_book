@@ -4697,4 +4697,14 @@ Hints:
 ""2017-01-17 12:56:37 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contact found and retrieved!
 ""2017-01-17 12:56:37 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
 ""2017-01-17 12:56:37 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts retrieved!
+""2017-01-17 13:36:10 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - Starting ContactDaoImplTest on aleksandrk with PID 3376 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-17 13:36:10 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - No active profile set, falling back to default profiles: default
+""2017-01-17 13:36:15 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8bbf455] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-17 13:36:20 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - Started ContactDaoImplTest in 12.266 seconds (JVM running for 16.906)
+""2017-01-17 13:36:20 [main] INFO  c.m.c.dao.impl.ContactDaoImpl - Start to fetch contacts from Cache.
+""2017-01-17 13:36:21 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-17 13:36:21 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-17 13:36:21 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-17 13:36:21 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-17 13:36:21 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
 "

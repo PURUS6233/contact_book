@@ -21,4 +21,10 @@ public class ContactDaoImplTest extends AbstractTest{
 	public void test_instantiation() throws Exception {
 		assertNotNull(assembler);
 	}
+	
+	@Test
+	public void test_cache() throws Exception {
+		assembler.initCaches();
+		assertNotNull(assembler.getContacts());
+	}
 }
