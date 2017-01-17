@@ -4641,4 +4641,37 @@ Hints:
 ""2017-01-17 12:38:45 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 9223372036854775807!
 ""2017-01-17 12:38:45 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 1!
 ""2017-01-17 12:38:45 [main] INFO  c.m.c.controller.ContactController - Request for fetching all Contacts.
+""2017-01-17 12:42:50 [main] INFO  c.m.c.c.ContactControllerTest - Starting ContactControllerTest on aleksandrk with PID 3344 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-17 12:42:50 [main] INFO  c.m.c.c.ContactControllerTest - No active profile set, falling back to default profiles: default
+""2017-01-17 12:42:55 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-17 12:42:55 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-17 12:42:55 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 46 ms
+""2017-01-17 12:42:55 [main] INFO  c.m.c.c.ContactControllerTest - Started ContactControllerTest in 6.421 seconds (JVM running for 8.47)
+""2017-01-17 12:42:55 [main] INFO  c.m.c.controller.ContactController - Request for fetching contacts that not match regex: ^$!
+""2017-01-17 12:42:56 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 9223372036854775807!
+""2017-01-17 12:42:56 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 1!
+""2017-01-17 12:42:56 [main] INFO  c.m.c.controller.ContactController - Request for fetching all Contacts.
+""2017-01-17 12:43:16 [main] INFO  c.m.c.c.ContactControllerTest - Starting ContactControllerTest on aleksandrk with PID 4680 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-17 12:43:16 [main] INFO  c.m.c.c.ContactControllerTest - No active profile set, falling back to default profiles: default
+""2017-01-17 12:43:20 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-17 12:43:20 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-17 12:43:20 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 31 ms
+""2017-01-17 12:43:20 [main] INFO  c.m.c.c.ContactControllerTest - Started ContactControllerTest in 5.468 seconds (JVM running for 7.791)
+""2017-01-17 12:43:20 [main] INFO  c.m.c.controller.ContactController - Request for fetching contacts that not match regex: ^$!
+""2017-01-17 12:43:21 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 9223372036854775807!
+""2017-01-17 12:43:21 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 1!
+""2017-01-17 12:43:21 [main] INFO  c.m.c.controller.ContactController - Request for fetching all Contacts.
+""2017-01-17 12:43:21 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-17 12:43:21 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - Starting ContactDaoImplTest on aleksandrk with PID 4680 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-17 12:43:21 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - No active profile set, falling back to default profiles: default
+""2017-01-17 12:43:22 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$32fb8a2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-17 12:43:25 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - Started ContactDaoImplTest in 3.766 seconds (JVM running for 12.088)
+""2017-01-17 12:43:25 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Test!
+""2017-01-17 12:43:25 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Test!
+""2017-01-17 12:43:25 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-17 12:43:25 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts for regex retrieved!
+""2017-01-17 12:43:25 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contact with id: 1.
+""2017-01-17 12:43:25 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contact found and retrieved!
+""2017-01-17 12:43:25 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-17 12:43:25 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts retrieved!
 "

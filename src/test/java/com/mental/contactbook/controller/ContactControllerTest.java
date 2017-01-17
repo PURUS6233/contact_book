@@ -5,25 +5,20 @@ import static org.junit.Assert.*;
 import java.util.Arrays;
 import java.util.Collection;
 
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.when;
 import static org.mockito.BDDMockito.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.hateoas.Resource;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
-import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.mental.contactbook.entity.Contact;
@@ -31,7 +26,7 @@ import com.mental.contactbook.service.ContactService;
 
 @RunWith(SpringRunner.class)
 @WebMvcTest(ContactController.class)
-public class ContactControllerTest {
+public class ContactControllerTest{
 
 	@Autowired
 	private MockMvc mvc;
