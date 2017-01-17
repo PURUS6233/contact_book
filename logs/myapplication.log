@@ -4779,4 +4779,15 @@ Hints:
 ""2017-01-17 16:34:28 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contact found and retrieved!
 ""2017-01-17 16:34:28 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
 ""2017-01-17 16:34:28 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts retrieved!
+""2017-01-17 16:41:15 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - Starting ContactDaoImplTest on aleksandrk with PID 5236 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-17 16:41:15 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - No active profile set, falling back to default profiles: default
+""2017-01-17 16:41:21 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$5e608d3e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-17 16:41:21 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$154e5720] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-17 16:41:27 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - Started ContactDaoImplTest in 13.572 seconds (JVM running for 16.94)
+""2017-01-17 16:41:28 [main] INFO  c.m.c.dao.impl.ContactDaoImpl - Start to fetch contacts from Cache.
+""2017-01-17 16:41:30 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-17 16:41:30 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-17 16:41:30 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-17 16:41:30 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-17 16:41:30 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
 "
