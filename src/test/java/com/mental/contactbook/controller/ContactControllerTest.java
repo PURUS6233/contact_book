@@ -1,9 +1,6 @@
 package com.mental.contactbook.controller;
 
 import static org.junit.Assert.*;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -12,7 +9,15 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+
+import static org.mockito.Matchers.any;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.when;
+
 import org.mockito.MockitoAnnotations;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.hateoas.Resource;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
@@ -23,10 +28,16 @@ import com.mental.contactbook.entity.Contact;
 import com.mental.contactbook.service.ContactService;
 
 @Transactional
-public class ContactControllerTest extends AbstractControllerTest{
+public class ContactControllerTest extends AbstractControllerTest {
+
+	@Autowired
+	private ContactResourceAssembler contactResourceAssembler;
 
 	@Mock
 	private ContactService contactServiceMock;
+
+	@Mock
+	private ContactResourceAssembler contactResourceAssemblerMock;
 
 	@InjectMocks
 	private ContactController contactController;
@@ -35,9 +46,16 @@ public class ContactControllerTest extends AbstractControllerTest{
 	public void setUp() {
 		MockitoAnnotations.initMocks(this);
 		mvc = MockMvcBuilders.standaloneSetup(contactController).build();
+		setResourse();
 	}
 
 	private final Collection<Contact> contacts = Arrays.asList(getEntityStubData());
+
+	private Resource<Contact> resourse;
+	
+	public void setResourse() {
+		this.resourse = contactResourceAssembler.toResource(getEntityStubData());
+	}
 
 	private Contact getEntityStubData() {
 		return new Contact(1, "Alexander");
@@ -91,9 +109,10 @@ public class ContactControllerTest extends AbstractControllerTest{
 	public void test_getContact() throws Exception {
 
 		Long id = new Long(1);
-		
-		when(contactServiceMock.getContact(id)).thenReturn(getEntityStubData());
 
+		when(contactResourceAssemblerMock.toResource((Contact) any()))
+				.thenReturn(resourse);
+		
 		String uri = "/hello/contacts/{id}";
 
 		MvcResult result = mvc.perform(
@@ -128,5 +147,4 @@ public class ContactControllerTest extends AbstractControllerTest{
 		assertTrue("failure - expected HTTP responce body to return empty response",
 				content.trim().length() == 0);
 	}
-
 }
