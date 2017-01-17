@@ -4,3 +4,5 @@ jdk:
 script: mvn test
 services:
   - postgresql
+before_script:
+  - psql -c 'create database contactbookdb;' -U postgres
