@@ -8,6 +8,7 @@ import org.springframework.hateoas.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -67,5 +68,16 @@ public class ContactController {
 		return getContactResourceAssembler().toResource(
 				getContactService().getContact(id));
 	}
-
+	
+	@ExceptionHandler(ServiceException.class)
+	@ResponseStatus(HttpStatus.NOT_FOUND)
+	String handleServiceException(Exception e) {
+		return e.getMessage();
+	}
+	
+	@ExceptionHandler(IllegalStateException.class)
+	@ResponseStatus(HttpStatus.BAD_REQUEST)
+	String handleBadRequests(Exception e) {
+		return e.getMessage();
+	}
 }

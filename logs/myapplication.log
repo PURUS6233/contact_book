@@ -4674,4 +4674,27 @@ Hints:
 ""2017-01-17 12:43:25 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contact found and retrieved!
 ""2017-01-17 12:43:25 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
 ""2017-01-17 12:43:25 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts retrieved!
+""2017-01-17 12:56:28 [main] INFO  c.m.c.c.ContactControllerTest - Starting ContactControllerTest on aleksandrk with PID 3124 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-17 12:56:28 [main] INFO  c.m.c.c.ContactControllerTest - No active profile set, falling back to default profiles: default
+""2017-01-17 12:56:31 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-17 12:56:31 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-17 12:56:32 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 47 ms
+""2017-01-17 12:56:32 [main] INFO  c.m.c.c.ContactControllerTest - Started ContactControllerTest in 5.484 seconds (JVM running for 7.643)
+""2017-01-17 12:56:32 [main] INFO  c.m.c.controller.ContactController - Request for fetching contacts that not match regex: ^$!
+""2017-01-17 12:56:32 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 9223372036854775807!
+""2017-01-17 12:56:32 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 1!
+""2017-01-17 12:56:32 [main] INFO  c.m.c.controller.ContactController - Request for fetching all Contacts.
+""2017-01-17 12:56:32 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-17 12:56:32 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - Starting ContactDaoImplTest on aleksandrk with PID 3124 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-17 12:56:32 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - No active profile set, falling back to default profiles: default
+""2017-01-17 12:56:34 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1bc5acd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-17 12:56:36 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - Started ContactDaoImplTest in 3.953 seconds (JVM running for 12.089)
+""2017-01-17 12:56:36 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Test!
+""2017-01-17 12:56:36 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Test!
+""2017-01-17 12:56:37 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-17 12:56:37 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts for regex retrieved!
+""2017-01-17 12:56:37 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contact with id: 1.
+""2017-01-17 12:56:37 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contact found and retrieved!
+""2017-01-17 12:56:37 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-17 12:56:37 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts retrieved!
 "
