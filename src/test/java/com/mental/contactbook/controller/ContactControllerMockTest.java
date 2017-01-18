@@ -26,7 +26,7 @@ import com.mental.contactbook.service.ContactService;
 
 @RunWith(SpringRunner.class)
 @WebMvcTest(ContactController.class)
-public class ContactControllerTest{
+public class ContactControllerMockTest{
 
 	@Autowired
 	private MockMvc mvc;
