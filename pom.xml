@@ -67,7 +67,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-failsafe-plugin</artifactId>
-				<version>2.18.1</version><!--$NO-MVN-MAN-VER$-->
+				<version>2.18.1</version><!--$NO-MVN-MAN-VER$ -->
 				<executions>
 					<execution>
 						<id>integration-test</id>
@@ -101,6 +101,25 @@
 							<sources>
 								<source>src/it/java</source>
 							</sources>
+						</configuration>
+					</execution>
+					<execution>
+						<id>add-integration-test-resources</id>
+						<phase>generate-test-resources</phase>
+						<goals>
+							<goal>add-test-resource</goal>
+						</goals>
+						<configuration>
+							<!-- Configures the resource directory of our integration tests -->
+							<resources>
+								<!-- Placeholders that are found from the files located in the configured 
+									resource directories are replaced with the property values found from the 
+									profile specific configuration file. -->
+								<resource>
+									<filtering>true</filtering>
+									<directory>src/it/resources</directory>
+								</resource>
+							</resources>
 						</configuration>
 					</execution>
 				</executions>
