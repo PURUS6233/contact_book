@@ -346,4 +346,85 @@
 ""2017-01-18 16:16:02 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
 ""2017-01-18 16:16:02 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [afterTestRun.sql]
 ""2017-01-18 16:16:02 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [afterTestRun.sql] in 16 ms.
+""2017-01-18 16:25:04 [main] INFO  com.mental.contactbook.Application - Starting Application on aleksandrk with PID 3780 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-18 16:25:04 [main] INFO  com.mental.contactbook.Application - No active profile set, falling back to default profiles: default
+""2017-01-18 16:25:04 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@17cc17c: startup date [Wed Jan 18 16:25:04 EET 2017]; root of context hierarchy
+""2017-01-18 16:25:09 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$fafffec9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-18 16:25:09 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b1edc8ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-18 16:25:11 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-01-18 16:25:11 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-01-18 16:25:11 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+""2017-01-18 16:25:11 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-01-18 16:25:12 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-01-18 16:25:12 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-01-18 16:25:12 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-01-18 16:25:12 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-01-18 16:25:12 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-01-18 16:25:16 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-01-18 16:25:16 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-01-18 16:25:16 [main] INFO  com.mental.contactbook.Application - Started Application in 14.078 seconds (JVM running for 16.725)
+""2017-01-18 16:25:22 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-01-18 16:25:22 [http-nio-8080-exec-1] INFO  c.m.c.controller.ContactController - Request for fetching contacts that not match regex: ^A.*$!
+""2017-01-18 16:25:23 [http-nio-8080-exec-1] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-18 16:25:23 [http-nio-8080-exec-1] INFO  c.m.c.dao.impl.ContactDaoImpl - Start to fetch contacts from Cache.
+""2017-01-18 16:25:24 [http-nio-8080-exec-1] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-18 16:25:24 [http-nio-8080-exec-1] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-18 16:25:24 [http-nio-8080-exec-1] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts for regex retrieved!
+""2017-01-18 16:25:26 [http-nio-8080-exec-2] INFO  c.m.c.controller.ContactController - Request for fetching contacts that not match regex: ^A.*$!
+""2017-01-18 16:25:30 [http-nio-8080-exec-3] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 56!
+""2017-01-18 16:25:30 [http-nio-8080-exec-3] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contact with id: 56.
+""2017-01-18 16:25:30 [http-nio-8080-exec-3] INFO  c.m.c.dao.impl.ContactDaoImpl - Start to fetch contacts from Cache.
+""2017-01-18 16:25:30 [http-nio-8080-exec-3] INFO  c.m.c.s.impl.ContactServiceImpl - Contact found and retrieved!
+""2017-01-18 16:25:30 [http-nio-8080-exec-3] INFO  c.m.c.controller.ContactController - Adding resource to contact
+""2017-01-18 16:25:31 [http-nio-8080-exec-3] INFO  c.m.c.controller.ContactController - Resource created with contact: Contact [id=56, name=Lesha]
+""2017-01-18 16:25:34 [http-nio-8080-exec-4] INFO  c.m.c.controller.ContactController - Request for fetching all Contacts.
+""2017-01-18 16:25:34 [http-nio-8080-exec-4] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-18 16:25:34 [http-nio-8080-exec-4] INFO  c.m.c.dao.impl.ContactDaoImpl - Start to fetch contacts from Cache.
+""2017-01-18 16:25:34 [http-nio-8080-exec-4] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts retrieved!
+""2017-01-18 16:25:43 [http-nio-8080-exec-5] INFO  c.m.c.controller.ContactController - Request for fetching contacts that not match regex: ^L.*$!
+""2017-01-18 16:25:43 [http-nio-8080-exec-5] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-18 16:25:43 [http-nio-8080-exec-5] INFO  c.m.c.dao.impl.ContactDaoImpl - Start to fetch contacts from Cache.
+""2017-01-18 16:25:43 [http-nio-8080-exec-5] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts for regex retrieved!
+""2017-01-18 16:25:49 [RMI TCP Connection(2)-192.168.80.53] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+""2017-01-18 16:25:49 [RMI TCP Connection(2)-192.168.80.53] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@17cc17c: startup date [Wed Jan 18 16:25:04 EET 2017]; root of context hierarchy
+""2017-01-18 16:25:49 [RMI TCP Connection(2)-192.168.80.53] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2017-01-19 09:06:43 [main] INFO  com.mental.contactbook.Application - Starting Application on aleksandrk with PID 2812 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-19 09:06:43 [main] INFO  com.mental.contactbook.Application - No active profile set, falling back to default profiles: default
+""2017-01-19 09:06:44 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@17cc17c: startup date [Thu Jan 19 09:06:44 EET 2017]; root of context hierarchy
+""2017-01-19 09:06:54 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$fafffec9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-19 09:06:54 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b1edc8ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-19 09:06:56 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-01-19 09:06:56 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-01-19 09:06:56 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+""2017-01-19 09:06:57 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-01-19 09:06:58 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-01-19 09:06:58 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-01-19 09:06:58 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-01-19 09:06:58 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-01-19 09:06:58 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-01-19 09:07:02 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-01-19 09:07:02 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-01-19 09:07:02 [main] INFO  com.mental.contactbook.Application - Started Application in 23.171 seconds (JVM running for 32.811)
+""2017-01-19 09:07:12 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-01-19 09:07:13 [http-nio-8080-exec-1] INFO  c.m.c.controller.ContactController - Request for fetching contacts that not match regex: ^L.*$!
+""2017-01-19 09:07:13 [http-nio-8080-exec-1] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-19 09:07:13 [http-nio-8080-exec-1] INFO  c.m.c.dao.impl.ContactDaoImpl - Start to fetch contacts from Cache.
+""2017-01-19 09:07:21 [http-nio-8080-exec-1] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 09:07:21 [http-nio-8080-exec-1] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 09:07:21 [http-nio-8080-exec-1] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts for regex retrieved!
+""2017-01-19 09:07:52 [http-nio-8080-exec-2] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 56!
+""2017-01-19 09:07:52 [http-nio-8080-exec-2] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contact with id: 56.
+""2017-01-19 09:07:52 [http-nio-8080-exec-2] INFO  c.m.c.dao.impl.ContactDaoImpl - Start to fetch contacts from Cache.
+""2017-01-19 09:07:52 [http-nio-8080-exec-2] INFO  c.m.c.s.impl.ContactServiceImpl - Contact found and retrieved!
+""2017-01-19 09:07:52 [http-nio-8080-exec-2] INFO  c.m.c.controller.ContactController - Adding resource to contact
+""2017-01-19 09:07:52 [http-nio-8080-exec-2] INFO  c.m.c.controller.ContactController - Resource created with contact: Contact [id=56, name=Lesha]
+""2017-01-19 09:25:51 [http-nio-8080-exec-4] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 56!
+""2017-01-19 09:25:51 [http-nio-8080-exec-4] INFO  c.m.c.controller.ContactController - Adding resource to contact
+""2017-01-19 09:25:51 [http-nio-8080-exec-4] INFO  c.m.c.controller.ContactController - Resource created with contact: Contact [id=56, name=Lesha]
+""2017-01-19 09:25:53 [http-nio-8080-exec-5] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 56!
+""2017-01-19 09:25:53 [http-nio-8080-exec-5] INFO  c.m.c.controller.ContactController - Adding resource to contact
+""2017-01-19 09:25:53 [http-nio-8080-exec-5] INFO  c.m.c.controller.ContactController - Resource created with contact: Contact [id=56, name=Lesha]
+""2017-01-19 09:37:46 [RMI TCP Connection(2)-192.168.80.53] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+""2017-01-19 09:37:46 [RMI TCP Connection(2)-192.168.80.53] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@17cc17c: startup date [Thu Jan 19 09:06:44 EET 2017]; root of context hierarchy
+""2017-01-19 09:37:46 [RMI TCP Connection(2)-192.168.80.53] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
 "

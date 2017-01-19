@@ -1,7 +1,0 @@
-CREATE SCHEMA contactbook;
-
-CREATE TABLE IF NOT EXISTS contactbook.contacts (
-  id BIGINT NOT NULL ,
-  name VARCHAR NOT NULL ,
-  PRIMARY KEY (id) 
-);

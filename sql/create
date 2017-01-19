@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXIST contactbookdb
+  WITH OWNER = postgres
+       ENCODING = 'UTF8'
+       TABLESPACE = pg_default
+       LC_COLLATE = 'Russian_Russia.1251'
+       LC_CTYPE = 'Russian_Russia.1251'
+       CONNECTION LIMIT = -1;
+
+CREATE SCHEMA IF NOT EXISTS contactbook;
+
+CREATE TABLE IF NOT EXISTS contactbook.contacts (
+  id BIGINT NOT NULL ,
+  name VARCHAR NOT NULL ,
+  PRIMARY KEY (id) 
+);
