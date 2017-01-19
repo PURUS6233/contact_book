@@ -1,26 +1,32 @@
 [![Build Status](https://travis-ci.org/PURUS6233/contact_book.svg?branch=master)](https://travis-ci.org/PURUS6233/contact_book)
 
 contact_book
+
 Веб-приложение. Принимает запросы для поиска контактов в базе данных.
+
 Примеры запросов:
+
 1) /hello/contacts - возвращает все контакты в json формате в виде:
 contacts: [ Contact, ... ];
+
 2) /hello/contacts?nameFilter=^.*[A].*$ - возвращает контакты, которые НЕ содержат букв A в json формате в виде:
 contacts: [ Contact, ... ];
+
 3) /hello/contacts/{id} - возвращает контакт с заданной id в json формате в виде:
 Contact
+
 {
   “id”: integer,
   “name”: string,
   "links": [
-	{
+  	{
       "rel": "contact",
       "href": "http://localhost:8080/hello/contacts/{id}"
     }
   ]
 };
 
-База данных
+База данных.
 Результаты поиска считываются с БД PostgreSQL.
 
 1. Перед запуском приложения необходимо локально установить БД PostgreSQL;
