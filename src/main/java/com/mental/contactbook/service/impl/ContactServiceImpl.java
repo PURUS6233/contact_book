@@ -30,6 +30,9 @@ public class ContactServiceImpl implements ContactService {
 		return contactDao;
 	}
 
+	/**
+	 * Second cache level for individual Contact entities
+	 */
 	@Cacheable(value = "contact", key = "#id")
 	public Contact getContact(Long id) throws ServiceException {
 		log.info("Start to fetch contact with id: " + id + ".");
@@ -72,8 +75,12 @@ public class ContactServiceImpl implements ContactService {
 		return contacts;
 	}
 
-	@Cacheable(value = "contacts", key = "#regex")
-	public Collection<Contact> getAllContactsExceptRegex(String regex) throws ServiceException{
+	/**
+	 * Second cache level for Contacts with regex nameFilter
+	 */
+	@Cacheable(value = "contacts", key = "#nameFilter")
+	public Collection<Contact> getAllContactsExceptRegex(String nameFilter)
+			throws ServiceException {
 
 		log.info("Start to fetch contacts from DB.");
 		Collection<Contact> result = new ArrayList<Contact>();
@@ -86,14 +93,16 @@ public class ContactServiceImpl implements ContactService {
 		}
 		log.trace("Start loading collection with regex.");
 		for (Contact entity : contacts) {
-			if (!entity.getName().matches(regex)) {
+			if (!entity.getName().matches(nameFilter)) { // Checking expression that
+													// entity not match to
+													// regular expression
 				result.add(entity);
 			}
 		}
 		if (result.isEmpty()) {
-			log.trace("There is no matches by regex: " + regex
+			log.trace("There is no matches by regex: " + nameFilter
 					+ " in contacts collection");
-			throw new ServiceException("There is no matches by regex: " + regex
+			throw new ServiceException("There is no matches by regex: " + nameFilter
 					+ " in contacts collection");
 		}
 		log.info("Contacts for regex retrieved!");

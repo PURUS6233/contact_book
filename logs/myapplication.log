@@ -427,4 +427,299 @@
 ""2017-01-19 09:37:46 [RMI TCP Connection(2)-192.168.80.53] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
 ""2017-01-19 09:37:46 [RMI TCP Connection(2)-192.168.80.53] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@17cc17c: startup date [Thu Jan 19 09:06:44 EET 2017]; root of context hierarchy
 ""2017-01-19 09:37:46 [RMI TCP Connection(2)-192.168.80.53] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2017-01-19 10:32:13 [main] INFO  com.mental.contactbook.Application - Starting Application on aleksandrk with PID 5116 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-19 10:32:13 [main] INFO  com.mental.contactbook.Application - No active profile set, falling back to default profiles: default
+""2017-01-19 10:32:13 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5c7d63: startup date [Thu Jan 19 10:32:13 EET 2017]; root of context hierarchy
+""2017-01-19 10:32:17 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$4ff368b8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-19 10:32:17 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6e1329a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-19 10:32:19 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-01-19 10:32:19 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-01-19 10:32:19 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+""2017-01-19 10:32:20 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-01-19 10:32:21 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-01-19 10:32:21 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-01-19 10:32:21 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-01-19 10:32:21 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-01-19 10:32:21 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-01-19 10:32:24 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-01-19 10:32:24 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-01-19 10:32:24 [main] INFO  com.mental.contactbook.Application - Started Application in 13.89 seconds (JVM running for 40.701)
+""2017-01-19 10:33:54 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-01-19 10:33:55 [http-nio-8080-exec-1] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 56!
+""2017-01-19 10:33:55 [http-nio-8080-exec-1] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contact with id: 56.
+""2017-01-19 10:33:55 [http-nio-8080-exec-1] INFO  c.m.c.dao.impl.ContactDaoImpl - Start to fetch contacts from Cache.
+""2017-01-19 11:07:35 [main] INFO  com.mental.contactbook.Application - Starting Application on aleksandrk with PID 4916 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-19 11:07:35 [main] INFO  com.mental.contactbook.Application - No active profile set, falling back to default profiles: default
+""2017-01-19 11:07:35 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@17cc17c: startup date [Thu Jan 19 11:07:35 EET 2017]; root of context hierarchy
+""2017-01-19 11:07:39 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$fafffec9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-19 11:07:39 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b1edc8ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-19 11:07:41 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+""2017-01-19 11:07:41 [main] INFO  o.a.catalina.core.StandardService - Starting service Tomcat
+""2017-01-19 11:07:41 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.6
+""2017-01-19 11:07:41 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2017-01-19 11:07:42 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+""2017-01-19 11:07:42 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+""2017-01-19 11:07:42 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+""2017-01-19 11:07:42 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+""2017-01-19 11:07:42 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+""2017-01-19 11:07:44 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+""2017-01-19 11:07:45 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+""2017-01-19 11:07:45 [main] INFO  com.mental.contactbook.Application - Started Application in 10.844 seconds (JVM running for 12.951)
+""2017-01-19 11:08:37 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+""2017-01-19 11:08:38 [http-nio-8080-exec-1] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 56!
+""2017-01-19 11:08:38 [http-nio-8080-exec-1] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contact with id: 56.
+""2017-01-19 11:08:38 [http-nio-8080-exec-1] INFO  c.m.c.dao.impl.ContactDaoImpl - Start to fetch contacts from Cache.
+""2017-01-19 11:08:39 [http-nio-8080-exec-1] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:08:39 [http-nio-8080-exec-1] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:08:39 [http-nio-8080-exec-1] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:08:39 [http-nio-8080-exec-1] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:08:39 [http-nio-8080-exec-1] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:08:39 [http-nio-8080-exec-1] INFO  c.m.c.s.impl.ContactServiceImpl - Contact found and retrieved!
+""2017-01-19 11:08:39 [http-nio-8080-exec-1] INFO  c.m.c.controller.ContactController - Adding resource to contact
+""2017-01-19 11:08:39 [http-nio-8080-exec-1] INFO  c.m.c.controller.ContactController - Resource created with contact: Contact [id=56, name=Lesha]
+""2017-01-19 11:08:44 [http-nio-8080-exec-2] INFO  c.m.c.controller.ContactController - Request for fetching contacts that not match regex: ^L.*$!
+""2017-01-19 11:08:44 [http-nio-8080-exec-2] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-19 11:08:44 [http-nio-8080-exec-2] INFO  c.m.c.dao.impl.ContactDaoImpl - Start to fetch contacts from Cache.
+""2017-01-19 11:08:44 [http-nio-8080-exec-2] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts for regex retrieved!
+""2017-01-19 11:08:49 [http-nio-8080-exec-3] INFO  c.m.c.controller.ContactController - Request for fetching all Contacts.
+""2017-01-19 11:08:49 [http-nio-8080-exec-3] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-19 11:08:49 [http-nio-8080-exec-3] INFO  c.m.c.dao.impl.ContactDaoImpl - Start to fetch contacts from Cache.
+""2017-01-19 11:08:49 [http-nio-8080-exec-3] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts retrieved!
+""2017-01-19 11:09:01 [RMI TCP Connection(2)-192.168.80.53] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+""2017-01-19 11:09:01 [RMI TCP Connection(2)-192.168.80.53] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@17cc17c: startup date [Thu Jan 19 11:07:35 EET 2017]; root of context hierarchy
+""2017-01-19 11:09:01 [RMI TCP Connection(2)-192.168.80.53] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+""2017-01-19 11:09:16 [main] INFO  c.m.c.controller.ContactControllerIT - Starting ContactControllerIT on aleksandrk with PID 3020 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-19 11:09:16 [main] INFO  c.m.c.controller.ContactControllerIT - No active profile set, falling back to default profiles: default
+""2017-01-19 11:09:20 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$4ff294e2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-19 11:09:20 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6e05ec4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-19 11:09:24 [main] INFO  c.m.c.controller.ContactControllerIT - Started ContactControllerIT in 8.593 seconds (JVM running for 12.3)
+""2017-01-19 11:09:25 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [beforeTestRun.sql]
+""2017-01-19 11:09:25 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [beforeTestRun.sql] in 47 ms.
+""2017-01-19 11:09:25 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-19 11:09:25 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-19 11:09:25 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 47 ms
+""2017-01-19 11:09:25 [main] INFO  c.m.c.controller.ContactController - Request for fetching contacts that not match regex: ^$!
+""2017-01-19 11:09:25 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-19 11:09:25 [main] INFO  c.m.c.dao.impl.ContactDaoImpl - Start to fetch contacts from Cache.
+""2017-01-19 11:09:25 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:09:25 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:09:25 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:09:25 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:09:25 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:09:25 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts for regex retrieved!
+""2017-01-19 11:09:25 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [afterTestRun.sql]
+""2017-01-19 11:09:26 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [afterTestRun.sql] in 62 ms.
+""2017-01-19 11:09:26 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [beforeTestRun.sql]
+""2017-01-19 11:09:26 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [beforeTestRun.sql] in 0 ms.
+""2017-01-19 11:09:26 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-19 11:09:26 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-19 11:09:26 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+""2017-01-19 11:09:26 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 9223372036854775807!
+""2017-01-19 11:09:26 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contact with id: 9223372036854775807.
+""2017-01-19 11:09:26 [main] INFO  c.m.c.dao.impl.ContactDaoImpl - Start to fetch contacts from Cache.
+""2017-01-19 11:09:26 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [afterTestRun.sql]
+""2017-01-19 11:09:26 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [afterTestRun.sql] in 0 ms.
+""2017-01-19 11:09:26 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [beforeTestRun.sql]
+""2017-01-19 11:09:26 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [beforeTestRun.sql] in 0 ms.
+""2017-01-19 11:09:26 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-19 11:09:26 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-19 11:09:26 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 31 ms
+""2017-01-19 11:09:26 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 1!
+""2017-01-19 11:09:26 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contact with id: 1.
+""2017-01-19 11:09:26 [main] INFO  c.m.c.dao.impl.ContactDaoImpl - Start to fetch contacts from Cache.
+""2017-01-19 11:09:26 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contact found and retrieved!
+""2017-01-19 11:09:26 [main] INFO  c.m.c.controller.ContactController - Adding resource to contact
+""2017-01-19 11:09:26 [main] INFO  c.m.c.controller.ContactController - Resource created with contact: Contact [id=1, name=Alexander]
+""2017-01-19 11:09:26 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [afterTestRun.sql]
+""2017-01-19 11:09:26 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [afterTestRun.sql] in 0 ms.
+""2017-01-19 11:09:26 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [beforeTestRun.sql]
+""2017-01-19 11:09:26 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [beforeTestRun.sql] in 0 ms.
+""2017-01-19 11:09:26 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-19 11:09:26 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-19 11:09:26 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 15 ms
+""2017-01-19 11:09:26 [main] INFO  c.m.c.controller.ContactController - Request for fetching all Contacts.
+""2017-01-19 11:09:26 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-19 11:09:26 [main] INFO  c.m.c.dao.impl.ContactDaoImpl - Start to fetch contacts from Cache.
+""2017-01-19 11:09:26 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts retrieved!
+""2017-01-19 11:09:26 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [afterTestRun.sql]
+""2017-01-19 11:09:26 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [afterTestRun.sql] in 0 ms.
+""2017-01-19 11:09:26 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Test!
+""2017-01-19 11:09:26 [main] INFO  c.m.c.c.ContactControllerMockTest - Starting ContactControllerMockTest on aleksandrk with PID 3020 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-19 11:09:26 [main] INFO  c.m.c.c.ContactControllerMockTest - No active profile set, falling back to default profiles: default
+""2017-01-19 11:09:28 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-19 11:09:28 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-19 11:09:28 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+""2017-01-19 11:09:28 [main] INFO  c.m.c.c.ContactControllerMockTest - Started ContactControllerMockTest in 2.296 seconds (JVM running for 16.637)
+""2017-01-19 11:09:28 [main] INFO  c.m.c.controller.ContactController - Request for fetching contacts that not match regex: ^$!
+""2017-01-19 11:09:28 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 9223372036854775807!
+""2017-01-19 11:09:28 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 1!
+""2017-01-19 11:09:28 [main] INFO  c.m.c.controller.ContactController - Request for fetching all Contacts.
+""2017-01-19 11:09:28 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:09:29 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - Starting ContactDaoImplTest on aleksandrk with PID 3020 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-19 11:09:29 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - No active profile set, falling back to default profiles: default
+""2017-01-19 11:09:30 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$4ff294e2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-19 11:09:30 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6e05ec4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-19 11:09:32 [main] INFO  c.m.c.dao.impl.ContactDaoImplTest - Started ContactDaoImplTest in 3.266 seconds (JVM running for 20.155)
+""2017-01-19 11:09:32 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Test!
+""2017-01-19 11:09:32 [main] INFO  c.m.c.controller.ContactController - Adding resource to contact
+""2017-01-19 11:09:32 [main] INFO  c.m.c.controller.ContactController - Resource created with contact: Contact [id=1, name=Test]
+""2017-01-19 11:09:32 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Test!
+""2017-01-19 11:09:32 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-19 11:09:32 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts for regex retrieved!
+""2017-01-19 11:09:32 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contact with id: 1.
+""2017-01-19 11:09:32 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contact found and retrieved!
+""2017-01-19 11:09:32 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-19 11:09:32 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts retrieved!
+""2017-01-19 11:09:33 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [beforeTestRun.sql]
+""2017-01-19 11:09:33 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [beforeTestRun.sql] in 0 ms.
+""2017-01-19 11:09:33 [main] INFO  c.m.c.dao.impl.ContactDaoImpl - Start to fetch contacts from Cache.
+""2017-01-19 11:09:33 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:09:33 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:09:33 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:09:33 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:09:33 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:09:33 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [afterTestRun.sql]
+""2017-01-19 11:09:33 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [afterTestRun.sql] in 0 ms.
+""2017-01-19 11:10:43 [main] INFO  c.m.c.c.ContactControllerMockTest - Starting ContactControllerMockTest on aleksandrk with PID 5452 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-19 11:10:43 [main] INFO  c.m.c.c.ContactControllerMockTest - No active profile set, falling back to default profiles: default
+""2017-01-19 11:10:47 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-19 11:10:47 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-19 11:10:47 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 32 ms
+""2017-01-19 11:10:48 [main] INFO  c.m.c.c.ContactControllerMockTest - Started ContactControllerMockTest in 6.687 seconds (JVM running for 11.102)
+""2017-01-19 11:10:48 [main] INFO  c.m.c.controller.ContactController - Request for fetching contacts that not match regex: ^$!
+""2017-01-19 11:10:48 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 9223372036854775807!
+""2017-01-19 11:10:48 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 1!
+""2017-01-19 11:10:48 [main] INFO  c.m.c.controller.ContactController - Request for fetching all Contacts.
+""2017-01-19 11:10:48 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mental.contactbook.controller.ContactResourceAssemblerTest], using SpringBootContextLoader
+""2017-01-19 11:10:48 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.mental.contactbook.controller.ContactResourceAssemblerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+""2017-01-19 11:10:48 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+""2017-01-19 11:10:48 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7bf2d9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@aa9c72, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@20aab9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@17c4456, org.springframework.test.context.transaction.TransactionalTestExecutionListener@768ada, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1fca2a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@133dc72, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@447c76, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@fc097e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@40c151, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@15b5fa7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@a32fb6]
+""2017-01-19 11:10:49 [main] INFO  c.m.c.c.ContactResourceAssemblerTest - Starting ContactResourceAssemblerTest on aleksandrk with PID 5452 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-19 11:10:49 [main] INFO  c.m.c.c.ContactResourceAssemblerTest - No active profile set, falling back to default profiles: default
+""2017-01-19 11:10:50 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$2391c38c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-19 11:10:50 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$da7f8d6e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-19 11:10:52 [main] INFO  c.m.c.c.ContactResourceAssemblerTest - Started ContactResourceAssemblerTest in 4.062 seconds (JVM running for 15.71)
+""2017-01-19 11:10:52 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Test!
+""2017-01-19 11:10:52 [main] INFO  c.m.c.controller.ContactController - Adding resource to contact
+""2017-01-19 11:10:52 [main] INFO  c.m.c.controller.ContactController - Resource created with contact: Contact [id=1, name=Test]
+""2017-01-19 11:10:52 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mental.contactbook.dao.impl.ContactDaoImplTest], using SpringBootContextLoader
+""2017-01-19 11:10:52 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.mental.contactbook.dao.impl.ContactDaoImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+""2017-01-19 11:10:52 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+""2017-01-19 11:10:52 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6a9908, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@166f664, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1ac613b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@d6fdd4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@f28a1f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@a19573, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@a085e5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@14ff8f8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@19f2afc, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1f921b1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1b60246, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@152ab30]
+""2017-01-19 11:10:53 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:10:53 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Test!
+""2017-01-19 11:10:53 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-19 11:10:53 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts for regex retrieved!
+""2017-01-19 11:10:53 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contact with id: 1.
+""2017-01-19 11:10:53 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contact found and retrieved!
+""2017-01-19 11:10:53 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-19 11:10:53 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts retrieved!
+""2017-01-19 11:11:50 [main] INFO  c.m.c.c.ContactControllerMockTest - Starting ContactControllerMockTest on aleksandrk with PID 1416 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-19 11:11:50 [main] INFO  c.m.c.c.ContactControllerMockTest - No active profile set, falling back to default profiles: default
+""2017-01-19 11:11:54 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-19 11:11:54 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-19 11:11:54 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 47 ms
+""2017-01-19 11:11:55 [main] INFO  c.m.c.c.ContactControllerMockTest - Started ContactControllerMockTest in 6.328 seconds (JVM running for 8.819)
+""2017-01-19 11:11:55 [main] INFO  c.m.c.controller.ContactController - Request for fetching contacts that not match regex: ^$!
+""2017-01-19 11:11:55 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 9223372036854775807!
+""2017-01-19 11:11:55 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 1!
+""2017-01-19 11:11:55 [main] INFO  c.m.c.controller.ContactController - Request for fetching all Contacts.
+""2017-01-19 11:11:55 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mental.contactbook.controller.ContactResourceAssemblerTest], using SpringBootContextLoader
+""2017-01-19 11:11:55 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.mental.contactbook.controller.ContactResourceAssemblerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+""2017-01-19 11:11:55 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+""2017-01-19 11:11:55 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4a62bf, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1ebb1b6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@aee2a2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@13021cb, org.springframework.test.context.transaction.TransactionalTestExecutionListener@aae508, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@9bea, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1c6d27a, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1769ab0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@69a3b3, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@b4ba9f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1ace0b1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4e5dee]
+""2017-01-19 11:11:56 [main] INFO  c.m.c.c.ContactResourceAssemblerTest - Starting ContactResourceAssemblerTest on aleksandrk with PID 1416 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-19 11:11:56 [main] INFO  c.m.c.c.ContactResourceAssemblerTest - No active profile set, falling back to default profiles: default
+""2017-01-19 11:11:57 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$2391c38c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-19 11:11:57 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$da7f8d6e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-19 11:12:00 [main] INFO  c.m.c.c.ContactResourceAssemblerTest - Started ContactResourceAssemblerTest in 4.078 seconds (JVM running for 13.488)
+""2017-01-19 11:12:00 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Test!
+""2017-01-19 11:12:00 [main] INFO  c.m.c.controller.ContactController - Adding resource to contact
+""2017-01-19 11:12:00 [main] INFO  c.m.c.controller.ContactController - Resource created with contact: Contact [id=1, name=Test]
+""2017-01-19 11:12:00 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mental.contactbook.dao.impl.ContactDaoImplTest], using SpringBootContextLoader
+""2017-01-19 11:12:00 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.mental.contactbook.dao.impl.ContactDaoImplTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+""2017-01-19 11:12:00 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+""2017-01-19 11:12:00 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1a18b21, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@b790a5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@52fc81, org.springframework.test.context.support.DirtiesContextTestExecutionListener@123a3dc, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6d6da, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6a49c7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1b7157f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1e27856, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1ccd036, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@14c88f9, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@756082, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@b39552]
+""2017-01-19 11:12:00 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:12:00 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance with id:1 and name: Test!
+""2017-01-19 11:12:00 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-19 11:12:00 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts for regex retrieved!
+""2017-01-19 11:12:00 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contact with id: 1.
+""2017-01-19 11:12:00 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contact found and retrieved!
+""2017-01-19 11:12:00 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-19 11:12:00 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts retrieved!
+""2017-01-19 11:12:19 [main] INFO  c.m.c.controller.ContactControllerIT - Starting ContactControllerIT on aleksandrk with PID 780 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-19 11:12:19 [main] INFO  c.m.c.controller.ContactControllerIT - No active profile set, falling back to default profiles: default
+""2017-01-19 11:12:23 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$f203d936] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-19 11:12:23 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a8f1a318] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-19 11:12:27 [main] INFO  c.m.c.controller.ContactControllerIT - Started ContactControllerIT in 8.593 seconds (JVM running for 10.56)
+""2017-01-19 11:12:28 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [beforeTestRun.sql]
+""2017-01-19 11:12:28 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [beforeTestRun.sql] in 31 ms.
+""2017-01-19 11:12:28 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-19 11:12:28 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-19 11:12:28 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 47 ms
+""2017-01-19 11:12:28 [main] INFO  c.m.c.controller.ContactController - Request for fetching contacts that not match regex: ^$!
+""2017-01-19 11:12:28 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-19 11:12:28 [main] INFO  c.m.c.dao.impl.ContactDaoImpl - Start to fetch contacts from Cache.
+""2017-01-19 11:12:29 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:12:29 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:12:29 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:12:29 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:12:29 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:12:29 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts for regex retrieved!
+""2017-01-19 11:12:29 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [afterTestRun.sql]
+""2017-01-19 11:12:29 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [afterTestRun.sql] in 47 ms.
+""2017-01-19 11:12:29 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [beforeTestRun.sql]
+""2017-01-19 11:12:29 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [beforeTestRun.sql] in 15 ms.
+""2017-01-19 11:12:29 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-19 11:12:29 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-19 11:12:29 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+""2017-01-19 11:12:29 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 9223372036854775807!
+""2017-01-19 11:12:29 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contact with id: 9223372036854775807.
+""2017-01-19 11:12:29 [main] INFO  c.m.c.dao.impl.ContactDaoImpl - Start to fetch contacts from Cache.
+""2017-01-19 11:12:29 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [afterTestRun.sql]
+""2017-01-19 11:12:29 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [afterTestRun.sql] in 16 ms.
+""2017-01-19 11:12:29 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [beforeTestRun.sql]
+""2017-01-19 11:12:29 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [beforeTestRun.sql] in 0 ms.
+""2017-01-19 11:12:29 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-19 11:12:29 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-19 11:12:29 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+""2017-01-19 11:12:29 [main] INFO  c.m.c.controller.ContactController - Request for fetching Contact with id: 1!
+""2017-01-19 11:12:29 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contact with id: 1.
+""2017-01-19 11:12:29 [main] INFO  c.m.c.dao.impl.ContactDaoImpl - Start to fetch contacts from Cache.
+""2017-01-19 11:12:29 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contact found and retrieved!
+""2017-01-19 11:12:29 [main] INFO  c.m.c.controller.ContactController - Adding resource to contact
+""2017-01-19 11:12:29 [main] INFO  c.m.c.controller.ContactController - Resource created with contact: Contact [id=1, name=Alexander]
+""2017-01-19 11:12:29 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [afterTestRun.sql]
+""2017-01-19 11:12:29 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [afterTestRun.sql] in 0 ms.
+""2017-01-19 11:12:29 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [beforeTestRun.sql]
+""2017-01-19 11:12:29 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [beforeTestRun.sql] in 0 ms.
+""2017-01-19 11:12:29 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring FrameworkServlet ''
+""2017-01-19 11:12:29 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+""2017-01-19 11:12:29 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 0 ms
+""2017-01-19 11:12:29 [main] INFO  c.m.c.controller.ContactController - Request for fetching all Contacts.
+""2017-01-19 11:12:29 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Start to fetch contacts from DB.
+""2017-01-19 11:12:29 [main] INFO  c.m.c.dao.impl.ContactDaoImpl - Start to fetch contacts from Cache.
+""2017-01-19 11:12:29 [main] INFO  c.m.c.s.impl.ContactServiceImpl - Contacts retrieved!
+""2017-01-19 11:12:29 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [afterTestRun.sql]
+""2017-01-19 11:12:29 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [afterTestRun.sql] in 0 ms.
+""2017-01-19 11:12:29 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mental.contactbook.dao.impl.ContactDaoImplIT], using SpringBootContextLoader
+""2017-01-19 11:12:29 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.mental.contactbook.dao.impl.ContactDaoImplIT]: no resource found for suffixes {-context.xml, Context.groovy}.
+""2017-01-19 11:12:29 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+""2017-01-19 11:12:29 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@105c126, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@f9f27c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1bdcc2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2637be, org.springframework.test.context.transaction.TransactionalTestExecutionListener@197c4ad, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@40a5b1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2f9a77, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1f3da8b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@34d0f4, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@12a8aae, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@14e405e, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@54e2fe]
+""2017-01-19 11:12:29 [main] INFO  c.m.c.dao.impl.ContactDaoImplIT - Starting ContactDaoImplIT on aleksandrk with PID 780 (started by AleksandrK in C:\Documents and Settings\aleksandrk\workspace\contactbook)
+""2017-01-19 11:12:29 [main] INFO  c.m.c.dao.impl.ContactDaoImplIT - No active profile set, falling back to default profiles: default
+""2017-01-19 11:12:30 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$f203d936] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-19 11:12:30 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a8f1a318] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+""2017-01-19 11:12:32 [main] INFO  c.m.c.dao.impl.ContactDaoImplIT - Started ContactDaoImplIT in 3.359 seconds (JVM running for 16.189)
+""2017-01-19 11:12:43 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [beforeTestRun.sql]
+""2017-01-19 11:12:43 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [beforeTestRun.sql] in 15 ms.
+""2017-01-19 11:12:43 [main] INFO  c.m.c.dao.impl.ContactDaoImpl - Start to fetch contacts from Cache.
+""2017-01-19 11:12:43 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:12:43 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:12:43 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:12:43 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:12:43 [main] INFO  c.mental.contactbook.entity.Contact - Created Contact instance!
+""2017-01-19 11:12:43 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [afterTestRun.sql]
+""2017-01-19 11:12:43 [main] INFO  o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [afterTestRun.sql] in 15 ms.
 "

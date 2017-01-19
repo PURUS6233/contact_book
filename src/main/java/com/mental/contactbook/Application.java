@@ -21,6 +21,12 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 	
+	/**
+	 * Create SimpleCacheManager with two GuavaCaches:
+	 * 1) bookCache - for Contact entities called with particular id;
+	 * 2) booksExpirableCache - for Contacts entities called with excluded regular expression;
+	 * @return simpleCacheManager
+	 */
 	@Bean
 	public CacheManager cacheManager() {
 		SimpleCacheManager simpleCacheManager = new SimpleCacheManager();

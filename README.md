@@ -42,7 +42,7 @@ spring.datasource.password= //Пароль доступа к БД;
 - (src/it/resources/beforeTestRun.sql),
 - (src/it/resources/afterTestRun.sql);
 
-Сборка
+Запуск тестов
 
 Чтобы запустить интеграционные и Unit тесты необходимо выполнить фазы сборки maven выше verify. 
 Пример: mvn clean verify;

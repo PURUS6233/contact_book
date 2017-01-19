@@ -23,27 +23,35 @@ import com.mental.contactbook.service.ServiceException;
 @RestController
 @RequestMapping("/hello/contacts")
 public class ContactController {
-	
+
 	private ContactService contactService;
 	private ContactResourceAssembler contactResourceAssembler;
 
-	private static final Logger log = LoggerFactory.getLogger(ContactController.class);
-	
+	private static final Logger log = LoggerFactory
+			.getLogger(ContactController.class);
+
 	@Autowired
 	public ContactController(ContactService contactService,
 			ContactResourceAssembler contactResourceAssembler) {
 		this.contactService = contactService;
 		this.contactResourceAssembler = contactResourceAssembler;
 	}
-	
+
 	public ContactService getContactService() {
 		return contactService;
 	}
-	
+
 	public ContactResourceAssembler getContactResourceAssembler() {
 		return contactResourceAssembler;
 	}
-	
+
+	/**
+	 * Get method for retrieving all contacts for mapping "/hello/contacts" in
+	 * JSON format
+	 * 
+	 * @return all contacts
+	 * @throws ServiceException
+	 */
 	@RequestMapping(value = "", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public Collection<Contact> getAllContacts() throws ServiceException {
@@ -51,15 +59,32 @@ public class ContactController {
 		return getContactService().getContacts();
 	}
 
+	/**
+	 * Get method for retrieving contacts for mapping
+	 * "/hello/contacts?nameFilter={}" in JSON format
+	 * @param nameFilter
+	 *            - regular expression for contacts searching
+	 * @return all contacts that not match to nameFilter
+	 * @throws ServiceException
+	 */
 	@RequestMapping(value = "", params = { "nameFilter" }, method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public Collection<Contact> getAllContactsExceptRegex(
 			@RequestParam(value = "nameFilter") String nameFilter)
 			throws ServiceException {
-		log.info("Request for fetching contacts that not match regex: " + nameFilter + "!");
+		log.info("Request for fetching contacts that not match regex: "
+				+ nameFilter + "!");
 		return getContactService().getAllContactsExceptRegex(nameFilter);
 	}
 
+	/**
+	 * Get method for retrieving contact for mapping
+	 * "/hello/contacts?nameFilter={}" in JSON format
+	 * 
+	 * @param id - id for searching contact entity
+	 * @return contact that have the same id
+	 * @throws ServiceException
+	 */
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	public Resource<Contact> getContact(@PathVariable("id") Long id)
@@ -68,13 +93,13 @@ public class ContactController {
 		return getContactResourceAssembler().toResource(
 				getContactService().getContact(id));
 	}
-	
+
 	@ExceptionHandler(ServiceException.class)
 	@ResponseStatus(HttpStatus.NOT_FOUND)
 	String handleServiceException(Exception e) {
 		return e.getMessage();
 	}
-	
+
 	@ExceptionHandler(IllegalStateException.class)
 	@ResponseStatus(HttpStatus.BAD_REQUEST)
 	String handleBadRequests(Exception e) {

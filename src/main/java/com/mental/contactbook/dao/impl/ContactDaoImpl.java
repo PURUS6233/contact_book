@@ -26,6 +26,9 @@ public class ContactDaoImpl extends AbstractDao implements ContactDao {
 
 	private LoadingCache<String, Collection<Contact>> contactDaoCache;
 
+	/**
+	 * Constructor for cache initialization
+	 */
 	ContactDaoImpl() {
 		initCaches();
 	}
@@ -37,6 +40,9 @@ public class ContactDaoImpl extends AbstractDao implements ContactDao {
 		initResponseCache();
 	}
 
+	/**
+	 * Loads all Contacts entities from DB to first cache level
+	 */
 	private void initResponseCache() {
 		log.debug("loading contacts from DB and save it to cache");
 		contactDaoCache = CacheBuilder.newBuilder()
@@ -55,6 +61,9 @@ public class ContactDaoImpl extends AbstractDao implements ContactDao {
 
 	private @Value("${app.getContacts}") String getContacts;
 
+	/**
+	 * Loads contacts from DB
+	 */
 	public Collection<Contact> getContactsFromDB() throws DaoException {
 		log.trace("Start to fetch contacts from DB.");
 		try {

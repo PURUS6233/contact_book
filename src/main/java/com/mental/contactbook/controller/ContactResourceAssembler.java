@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.hateoas.Resource;
 import org.springframework.hateoas.ResourceAssembler;
+import org.springframework.hateoas.ResourceSupport;
 import org.springframework.stereotype.Component;
 
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
@@ -16,6 +17,9 @@ public class ContactResourceAssembler implements
 
 	private static final Logger log = LoggerFactory.getLogger(ContactController.class);
 	
+	/**
+	 * Converts the Contact entity into an {@link ResourceSupport}.
+	 */
 	public Resource<Contact> toResource(Contact entity) {
 		log.info("Adding resource to contact");
 		Resource<Contact> resource = new Resource<Contact>(entity);
